@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Package and Distribute - NW.js Documentation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Package and Distribute";
+    var mkdocs_page_input_path = "For Users/Package and Distribute.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> NW.js Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Homepage</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">For Users</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../Getting%20Started/">Getting Started</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Debugging%20with%20DevTools/">Debugging with DevTools</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Package and Distribute</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#quick-start">Quick Start</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#prepare-your-app">Prepare Your App</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#prepare-nwjs">Prepare NW.js</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#package-your-app">Package Your App</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#package-option-1-plain-files-recommended">Package Option 1. Plain Files (Recommended)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#package-option-2-zip-file">Package Option 2. Zip File</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#platform-specific-steps">Platform Specific Steps</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#windows">Windows</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#linux">Linux</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#mac-os-x">Mac OS X</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#references">References</a>
+    </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../FAQ/">FAQ</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Migration</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Migration/From%200.12%20to%200.13/">From 0.12 to 0.13</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Advanced</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Advanced/Build%20Flavors/">Build Flavors</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Advanced/Content%20Verification/">Content Verification</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Advanced/Customize%20Menubar/">Customize Menubar</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Advanced/JavaScript%20Contexts%20in%20NW.js/">JavaScript Contexts in NW.js</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Advanced/Protect%20JavaScript%20Source%20Code/">Protect JavaScript Source Code</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Advanced/Security%20in%20NW.js/">Security in NW.js</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Advanced/Support%20for%20Mac%20App%20Store/">Support for Mac App Store</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Advanced/Test%20with%20ChromeDriver/">Test with ChromeDriver</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Advanced/Transparent%20Window/">Transparent Window</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Advanced/Use%20Flash%20Plugin/">Use Flash Plugin</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Advanced/Use%20NaCl%20in%20NW.js/">Use NaCl in NW.js</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Advanced/Use%20Native%20Node%20Modules/">Use Native Node Modules</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Advanced/Autoupdates/">Autoupdates</a>
+                </li>
+    </ul>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">References</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../References/App/">App</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../References/Changes%20to%20DOM/">Changes to DOM</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../References/Changes%20to%20Node/">Changes to Node</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../References/Clipboard/">Clipboard</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../References/Command%20Line%20Options/">Command Line Options</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../References/Chrome%20Extension%20APIs/">Chrome Extension APIs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../References/Manifest%20Format/">Manifest Format</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../References/Menu/">Menu</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../References/MenuItem/">MenuItem</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../References/Screen/">Screen</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../References/Shell/">Shell</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../References/Shortcut/">Shortcut</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../References/Tray/">Tray</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../References/webview%20Tag/">webview Tag</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../References/Window/">Window</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">For Developers</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Developers/Building%20NW.js/">Building NW.js</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Developers/Contributing%20to%20NW.js/">Contributing to NW.js</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Developers/Enable%20Proprietary%20Codecs/">Enable Proprietary Codecs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Developers/Repositories/">Repositories</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Developers/Understanding%20Crash%20Dump/">Understanding Crash Dump</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Developers/Writing%20Documents%20for%20NW.js/">Writing Documents for NW.js</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Developers/Writing%20Test%20Cases%20for%20NW.js/">Writing Test Cases for NW.js</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Developers/Contributors%20of%20Documents/">Contributors of Documents</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">NW.js Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>For Users &raquo;</li>
+        
+      
+    
+    <li>Package and Distribute</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 class="doctitle" id="package-and-distribute">Package and Distribute</h1>
+<hr />
+<div class="toc">
+<ul>
+<li><a href="#package-and-distribute">Package and Distribute</a><ul>
+<li><a href="#quick-start">Quick Start</a></li>
+<li><a href="#prepare-your-app">Prepare Your App</a></li>
+<li><a href="#prepare-nwjs">Prepare NW.js</a></li>
+<li><a href="#package-your-app">Package Your App</a><ul>
+<li><a href="#package-option-1-plain-files-recommended">Package Option 1. Plain Files (Recommended)</a></li>
+<li><a href="#package-option-2-zip-file">Package Option 2. Zip File</a></li>
+</ul>
+</li>
+<li><a href="#platform-specific-steps">Platform Specific Steps</a><ul>
+<li><a href="#windows">Windows</a></li>
+<li><a href="#linux">Linux</a></li>
+<li><a href="#mac-os-x">Mac OS X</a></li>
+</ul>
+</li>
+<li><a href="#references">References</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<p>This document guides you how to package and distribute NW.js based app.</p>
+<h2 id="quick-start">Quick Start</h2>
+<p>You can use following tools to automatically package your NW.js based app for distribution.</p>
+<ul>
+<li><a href="https://github.com/nwjs-community/nw-builder">nw-builder</a></li>
+</ul>
+<p>Or your can build your app manually with the instructions below.</p>
+<h2 id="prepare-your-app">Prepare Your App</h2>
+<p>Before packaging, you should prepare all necessary files on hands. Check out following checklist to make sure you didn&rsquo;t miss anything:</p>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled/> Source code and resources</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Install NPM modules with <code>npm install</code></li>
+<li class="task-list-item"><input type="checkbox" disabled/> <a href="../Advanced/Use%20Native%20Node%20Modules/">Rebuild native Node modules</a></li>
+<li class="task-list-item"><input type="checkbox" disabled/> <a href="../Advanced/Use%20NaCl%20in%20NW.js/">Build NaCl binaries</a></li>
+<li class="task-list-item"><input type="checkbox" disabled/> <a href="../Advanced/Protect%20JavaScript%20Source%20Code/">Compile source code</a> and remove the original files</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Icon used in <a href="../../References/Manifest%20Format/#icon">manifest file</a></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Do not assume your <code>node_modules</code> that target one platform work <em>as is</em> in all platforms. For instance <code>node-email-templates</code> has specific Windows &amp; Mac OS X<code>npm install</code> commands. Besides, it requires python to install properly, which is not installed by default on Windows.<br />
+As a rule of thumb <strong><code>npm install</code> your <code>package.json</code> on each platform you target</strong> to ensure everything works as expected.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Filename and Path</p>
+<p>On most Linux and some Mac OS X, the file system is <strong>case sensitive</strong>. That means <code>test.js</code> and <code>Test.js</code> are different files. Make sure the paths and filenames used in your app have the right case. Otherwise your app may look bad or crash on those file systems.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Long Path on Windows</p>
+<p>The length of path used in your app may exceed the maximum length (260 characters) on Windows. That will cause various build failures. This usually happens during installing dependencies with <code>npm install</code> using older version of NPM (&lt;3.0). Please build your app in the root directory, like <code>C:\build\</code>, to avoid this issue as much as possible.</p>
+</div>
+<h2 id="prepare-nwjs">Prepare NW.js</h2>
+<p>You have to redistribute NW.js with your app to get your app running. NW.js provided multiple <a href="../Advanced/Build%20Flavors/">build flavors</a> for different requirements and package size. Choose the proper build flavor for your product or <a href="../../For%20Developers/Building%20NW.js/">build it from source code</a>.</p>
+<p>All files in the downloaded package should be redistributed with your product, except tools in SDK flavor including <code>nwjc</code>, <code>payload</code> and <code>chromedriver</code>.</p>
+<h2 id="package-your-app">Package Your App</h2>
+<p>There two options to pack your app: plain files or zip file.</p>
+<h3 id="package-option-1-plain-files-recommended">Package Option 1. Plain Files (Recommended)</h3>
+<p>On Windows and Linux, you can put the files of your app in the same folder of NW.js binaries and then ship them to your users. Make sure <code>nw</code> (or <code>nw.exe</code>) is in the same folder as <code>package.json</code>. Or you can put the files of your app in a folder named <code>package.nw</code> in the same folder as <code>nw</code> (or <code>nw.exe</code>).</p>
+<p>On Mac, put the files of your app into a folder named <code>app.nw</code> in <code>nwjs.app/Contents/Resources/</code> and done.</p>
+<p>It&rsquo;s the recommended way to pack your app.</p>
+<h3 id="package-option-2-zip-file">Package Option 2. Zip File</h3>
+<p>You can package all the files into a zip file and rename it as <code>package.nw</code>. And put it along with NW.js binaries for Windows and Linux. For Mac, name it <code>app.nw</code> and put it in <code>nwjs.app/Contents/Resources/</code>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Start Slow with Big Package or Too Many Files</p>
+<p>At starting time, NW.js will unzip the package into temp folder and load it from there. So it will start slower if your package is big or contains too many files.</p>
+</div>
+<p>On Windows and Linux, you can even hide the zip file by appending the zip file to the end of <code>nw</code> or <code>nw.exe</code>.<br />
+You can run following command on Windows to achieve this:<br />
+<div class="highlight"><pre><span></span><code><span class="k">copy</span> /b nw.exe+package.nw app.exe
+</code></pre></div><br />
+or following command on Linux:<br />
+<div class="highlight"><pre><span></span><code>cat nw package.nw &gt; app <span class="o">&amp;&amp;</span> chmod +x app 
+</code></pre></div></p>
+<h2 id="platform-specific-steps">Platform Specific Steps</h2>
+<h3 id="windows">Windows</h3>
+<p>Icon for <code>nw.exe</code> can be replaced with tools like <a href="http://www.angusj.com/resourcehacker/">Resource Hacker</a>, <a href="https://github.com/mllrsohn/node-webkit-builder">nw-builder</a> and <a href="https://github.com/felicienfrancois/node-winresourcer">node-winresourcer</a>.</p>
+<p>You can create a installer to deploy all necessary files onto end user&rsquo;s system. You can use <a href="https://msdn.microsoft.com/en-us/library/cc185688(VS.85).aspx">Windows Installer</a>, <a href="http://nsis.sourceforge.net/Main_Page">NSIS</a> or <a href="http://www.jrsoftware.org/isinfo.php">Inno Setup</a>.</p>
+<h3 id="linux">Linux</h3>
+<p>On Linux, you need to create proper <a href="https://wiki.archlinux.org/index.php/Desktop_Entries"><code>.desktop</code> file</a>.</p>
+<p>To create a self-extractable installer script, you can use scripts like <a href="https://en.wikipedia.org/wiki/Shar"><code>shar</code></a> or <a href="http://stephanepeter.com/makeself/"><code>makeself</code></a>.</p>
+<p>To distribute your app through the package management system, like <code>apt</code>, <code>yum</code>, <code>pacman</code> etc, please follow their official documents to create the packages.</p>
+<h3 id="mac-os-x">Mac OS X</h3>
+<p>On Mac OS X, you need to modify following files to have your own icon and bundle id:</p>
+<ul>
+<li><code>Contents/Resources/nw.icns</code>: icon of your app. <code>nw.icns</code> is in <a href="https://en.wikipedia.org/wiki/Apple_Icon_Image_format">Apple Icon Image Format</a>. You can convert your icon in PNG/JPEG format into ICNS by using tools like <a href="http://www.img2icnsapp.com/">Image2Icon</a>.</li>
+<li><code>Contents/Info.plist</code>: the apple package description file. You can view <a href="http://cocoadevcentral.com/articles/000071.php">Implementing Cocoa&rsquo;s Standard About Panel</a> on how this file will influence your app and what fields you should modify.</li>
+</ul>
+<p>To rename the application, the following files should be modified:<br />
+* <code>Contents/Info.plist</code> - CFBundleDisplayName<br />
+* <code>Contents/Resources/en.lproj/InfoPlist.strings</code> - CFBundleDisplayName<br />
+* <code>Contents/MacOS/nwjs</code> - rename the file to the value of <code>CFBundleExecutable</code> if you changed it<br />
+* <code>package.json</code> &ndash; add a string field <code>product_string</code> (e.g. foobar); the helper application will be shown as &lsquo;foobar Helper&rsquo;. (since v0.24.4)<br />
+  * <code>Contents/Frameworks/nwjs Framework.framework/Versions/n.n.n.n/nwjs Helper.app/Contents/MacOS/nwjs Helper.app</code> - rename the directory to &lsquo;foobar Helper.app&rsquo;, and also the three other helpers<br />
+  * <code>Contents/Frameworks/nwjs Framework.framework/Versions/n.n.n.n/nwjs Helper.app/Contents/MacOS/nwjs Helper.app/Contents/Info.plist</code> - change CFBundleDisplayName, and also the three other helpers</p>
+<p>You should sign your Mac app, or the user won&rsquo;t launch the app if Gatekeeper is turned on. See <a href="../Advanced/Support%20for%20Mac%20App%20Store/">Support for Mac App Store</a> for details.</p>
+<h2 id="references">References</h2>
+<p>See <a href="https://github.com/nwjs/nw.js/wiki/How-to-package-and-distribute-your-apps">wiki of NW.js</a> for more tools of packaging your app.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../FAQ/" class="btn btn-neutral float-right" title="FAQ">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Debugging%20with%20DevTools/" class="btn btn-neutral" title="Debugging with DevTools"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Debugging%20with%20DevTools/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../FAQ/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

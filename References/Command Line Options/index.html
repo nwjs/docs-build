@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Command Line Options - NW.js Documentation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Command Line Options";
+    var mkdocs_page_input_path = "References/Command Line Options.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> NW.js Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Homepage</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">For Users</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Users/Getting%20Started/">Getting Started</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Users/Debugging%20with%20DevTools/">Debugging with DevTools</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Users/Package%20and%20Distribute/">Package and Distribute</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Users/FAQ/">FAQ</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Migration</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../For%20Users/Migration/From%200.12%20to%200.13/">From 0.12 to 0.13</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Advanced</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../For%20Users/Advanced/Build%20Flavors/">Build Flavors</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../For%20Users/Advanced/Content%20Verification/">Content Verification</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../For%20Users/Advanced/Customize%20Menubar/">Customize Menubar</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../For%20Users/Advanced/JavaScript%20Contexts%20in%20NW.js/">JavaScript Contexts in NW.js</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../For%20Users/Advanced/Protect%20JavaScript%20Source%20Code/">Protect JavaScript Source Code</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../For%20Users/Advanced/Security%20in%20NW.js/">Security in NW.js</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../For%20Users/Advanced/Support%20for%20Mac%20App%20Store/">Support for Mac App Store</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../For%20Users/Advanced/Test%20with%20ChromeDriver/">Test with ChromeDriver</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../For%20Users/Advanced/Transparent%20Window/">Transparent Window</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../For%20Users/Advanced/Use%20Flash%20Plugin/">Use Flash Plugin</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../For%20Users/Advanced/Use%20NaCl%20in%20NW.js/">Use NaCl in NW.js</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../For%20Users/Advanced/Use%20Native%20Node%20Modules/">Use Native Node Modules</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../For%20Users/Advanced/Autoupdates/">Autoupdates</a>
+                </li>
+    </ul>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">References</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../App/">App</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Changes%20to%20DOM/">Changes to DOM</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Changes%20to%20Node/">Changes to Node</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Clipboard/">Clipboard</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Command Line Options</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#about-command-line-arguments">About command line arguments</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#-url">--url</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#-mixed-context">--mixed-context</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#-nwapp">--nwapp</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#-user-data-dir">--user-data-dir</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#-disable-devtools">--disable-devtools</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#-enable-node-worker">--enable-node-worker</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#-enable-featuresnwesm">--enable-features=NWESM</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#-disable-raf-throttling">--disable-raf-throttling</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#-disable-cookie-encryption">--disable-cookie-encryption</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#-disable-crash-handlertrue">--disable-crash-handler=true</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#-enable-gcm">--enable-gcm</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#-enable-transparent-visuals">--enable-transparent-visuals</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#-disable-transparency">--disable-transparency</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#-disable-gpu">--disable-gpu</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#-force-cpu-draw">--force-cpu-draw</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#other-chromium-options">Other Chromium Options</a>
+    </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Chrome%20Extension%20APIs/">Chrome Extension APIs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Manifest%20Format/">Manifest Format</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Menu/">Menu</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../MenuItem/">MenuItem</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Screen/">Screen</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Shell/">Shell</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Shortcut/">Shortcut</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Tray/">Tray</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../webview%20Tag/">webview Tag</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Window/">Window</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">For Developers</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Developers/Building%20NW.js/">Building NW.js</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Developers/Contributing%20to%20NW.js/">Contributing to NW.js</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Developers/Enable%20Proprietary%20Codecs/">Enable Proprietary Codecs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Developers/Repositories/">Repositories</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Developers/Understanding%20Crash%20Dump/">Understanding Crash Dump</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Developers/Writing%20Documents%20for%20NW.js/">Writing Documents for NW.js</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Developers/Writing%20Test%20Cases%20for%20NW.js/">Writing Test Cases for NW.js</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Developers/Contributors%20of%20Documents/">Contributors of Documents</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">NW.js Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>References &raquo;</li>
+        
+      
+    
+    <li>Command Line Options</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 class="doctitle" id="command-line-options">Command Line Options</h1>
+<hr />
+<div class="toc">
+<ul>
+<li><a href="#command-line-options">Command Line Options</a><ul>
+<li><a href="#about-command-line-arguments">About command line arguments</a></li>
+<li><a href="#-url">--url</a></li>
+<li><a href="#-mixed-context">--mixed-context</a></li>
+<li><a href="#-nwapp">--nwapp</a></li>
+<li><a href="#-user-data-dir">--user-data-dir</a></li>
+<li><a href="#-disable-devtools">--disable-devtools</a></li>
+<li><a href="#-enable-node-worker">--enable-node-worker</a></li>
+<li><a href="#-enable-featuresnwesm">--enable-features=NWESM</a></li>
+<li><a href="#-disable-raf-throttling">--disable-raf-throttling</a></li>
+<li><a href="#-disable-cookie-encryption">--disable-cookie-encryption</a></li>
+<li><a href="#-disable-crash-handlertrue">--disable-crash-handler=true</a></li>
+<li><a href="#-enable-gcm">--enable-gcm</a></li>
+<li><a href="#-enable-transparent-visuals">--enable-transparent-visuals</a></li>
+<li><a href="#-disable-transparency">--disable-transparency</a></li>
+<li><a href="#-disable-gpu">--disable-gpu</a></li>
+<li><a href="#-force-cpu-draw">--force-cpu-draw</a></li>
+<li><a href="#other-chromium-options">Other Chromium Options</a></li>
+</ul>
+</li>
+<li><a href="#nodejs-options">Node.js Options</a><ul>
+<li><a href="#-nw-node-inspector">--nw-node-inspector</a></li>
+</ul>
+</li>
+<li><a href="#environment-variables">Environment Variables</a></li>
+</ul>
+</div>
+<p>You use following command line options when starting NW.js to change some default behaviors.</p>
+<h2 id="about-command-line-arguments">About command line arguments</h2>
+<p>When a user uses your app to open a file under command line, like <code>your-app file.txt file2.txt</code>, the <code>file.txt file2.txt</code> will be recorded and you can use <a href="../App/">nw.App.argv</a> to get the array of command line arguments.  If there is already one running instance of your app, the full command line of the second instance will be passed to the existing instance by sending <code>open</code> event to the <code>App</code> object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For now there is a limitation: if the command line argument is the filename of .js file on disk, NW will just run it as upstream Node.js. This is for supporting <code>child_process.fork()</code> API.</p>
+</div>
+<h2 id="-url"><code>--url</code></h2>
+<p>Load URL with the default app: <code>--url=http://nwjs.io</code></p>
+<h2 id="-mixed-context"><code>--mixed-context</code></h2>
+<p>Run NW.js in <a href="../../For%20Users/Advanced/JavaScript%20Contexts%20in%20NW.js/#mixed-context-mode">Mixed Context Mode</a> instead of Separate Context Mode.</p>
+<h2 id="-nwapp"><code>--nwapp</code></h2>
+<p>An alternative way to specify the path of the app. This parameter is especially useful when <a href="../../For%20Users/Advanced/Test%20with%20ChromeDriver/">testing with ChromeDriver</a>.</p>
+<h2 id="-user-data-dir"><code>--user-data-dir</code></h2>
+<p>Specify the data directory for your app, which contains the stored data, caches and crash dumps etc. By default the data directory is in following directories according to your platform:</p>
+<ul>
+<li>Windows: <code>%LOCALAPPDATA%/&lt;name-in-manifest&gt;/</code></li>
+<li>Mac: <code>~/Library/Application Support/&lt;name-in-manifest&gt;/</code></li>
+<li>Linux: <code>~/.config/&lt;name-in-manifest&gt;</code></li>
+</ul>
+<p>Where <code>&lt;name-in-manifest&gt;</code> is the <a href="../Manifest%20Format/#name"><code>name</code> field in manifest</a>.</p>
+<h2 id="-disable-devtools"><code>--disable-devtools</code></h2>
+<p>Disable user&rsquo;s access to devtools feature in SDK build.</p>
+<h2 id="-enable-node-worker"><code>--enable-node-worker</code></h2>
+<p>Enable the Node.js integration in Web Workers. This will help you offload CPU hogging tasks with new threads, while <a href="https://developer.mozilla.org/en-US/docs/Web/API/Worker/postMessage">exchange large amount of data</a> with DOM efficiently with the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Structured_clone_algorithm">structured clone</a> algorithm.</p>
+<p>Please note that binary modules of Node.js need to be thread-safe to be used in this way. We&rsquo;ve made modifications to Node.js core to make sure core APIs are thread-safe, while we can not promise this with 3<sup>rd</sup> party binary modules. Pure JS modules are thread safe as long as they depends on thread-safe modules only. And there shouldn&rsquo;t be any side effect when the feature is not turned on.</p>
+<h2 id="-enable-featuresnwesm"><code>--enable-features=NWESM</code></h2>
+<p>Node.js and Chromium uses different ECMAScript module resolvers. To support loading ECMAScript modules in Node, by adding the switch, those modules can be loaded in Node context via &lsquo;import&rsquo;. You could add your JS script to <code>node-main</code> to use this feature since 0.98.2.</p>
+<p>Besides that, ES modules from Node can also be loaded directly in DOM contexts just like calling <code>require()</code>. The Node.js module resolver and the one from Browser are chained together to achieve this. To turn on this feature, use <code>--enable-features=NWChainImportNode</code> (under which the Node resolver is called first) or <code>--enable-features=NWChainImportDom</code>. These 2 flags should be used together with NWESM e.g. <code>--enable-features=NWESM,NWChainImportNode</code>. </p>
+<h2 id="-disable-raf-throttling"><code>--disable-raf-throttling</code></h2>
+<p>When it&rsquo;s used, requestAnimationFrame() callback will continue to fire when window is minimized or hidden. It&rsquo;s pretty useful for game developer. When the argument is not used, it behaves in the same way as Chrome browser and has no side effects.</p>
+<h2 id="-disable-cookie-encryption"><code>--disable-cookie-encryption</code></h2>
+<p>By default, the cookie store on disk is encrypted in Chromium. Use this switch to disable the encryption for testing purpose (e.g. sharing the cookie store between different systems).</p>
+<h2 id="-disable-crash-handlertrue"><code>--disable-crash-handler=true</code></h2>
+<p>Disable the crash handler process for single process mode. NOTE: you should explicitly set it to &lsquo;true&rsquo;. When using it and <code>--single-process</code> together, there will be only one NW process for your application. The crash dumping feature will be disabled with this switch. This switch must be put in the command line (not in package.json) to be effective.</p>
+<h2 id="-enable-gcm"><code>--enable-gcm</code></h2>
+<p>Enable the chrome.gcm API.</p>
+<h2 id="-enable-transparent-visuals"><code>--enable-transparent-visuals</code></h2>
+<h2 id="-disable-transparency"><code>--disable-transparency</code></h2>
+<h2 id="-disable-gpu"><code>--disable-gpu</code></h2>
+<h2 id="-force-cpu-draw"><code>--force-cpu-draw</code></h2>
+<p>These options are related to the transparent window feature. See <a href="../../For%20Users/Advanced/Transparent%20Window/">Transparent Window</a> for details.</p>
+<h2 id="other-chromium-options">Other Chromium Options</h2>
+<p>You can also use Chromium options listed in <a href="https://github.com/nwjs/chromium.src/blob/nw18/chrome/common/chrome_switches.cc">https://github.com/nwjs/chromium.src/blob/nw18/chrome/common/chrome_switches.cc</a> and <a href="https://github.com/nwjs/chromium.src/blob/nw18/content/public/common/content_switches.cc">https://github.com/nwjs/chromium.src/blob/nw18/content/public/common/content_switches.cc</a> . See also <a href="http://peter.sh/experiments/chromium-command-line-switches/">http://peter.sh/experiments/chromium-command-line-switches/</a></p>
+<p>These options can be put into <a href="../Manifest%20Format/#chromium-args"><code>chromium-args</code> in manifest</a> to get NW.js running with them each time.</p>
+<h1 id="nodejs-options">Node.js Options</h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The arguments in this section are added for Node.js. They should be in <code>node-main</code> field in <code>package.json</code>. They are not effective on Chromium and the command line.</p>
+</div>
+<h2 id="-nw-node-inspector"><code>--nw-node-inspector</code></h2>
+<p>Enable the V8 inspector in Node. Note that this will replace the registered V8 inspector in DOM from Blink, which will in turn breaks console.log in DOM since it relies on the inspector. You should consider use the console from Node instead as a workaround.</p>
+<h1 id="environment-variables">Environment Variables</h1>
+<p><code>NW_PRE_ARGS</code>&rsquo;s value is prepended to the value of <code>chromium-args</code> in manifest.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Chrome%20Extension%20APIs/" class="btn btn-neutral float-right" title="Chrome Extension APIs">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Clipboard/" class="btn btn-neutral" title="Clipboard"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Clipboard/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Chrome%20Extension%20APIs/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

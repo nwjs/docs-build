@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Debugging with DevTools - NW.js Documentation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Debugging with DevTools";
+    var mkdocs_page_input_path = "For Users/Debugging with DevTools.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> NW.js Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Homepage</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">For Users</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../Getting%20Started/">Getting Started</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Debugging with DevTools</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#open-developer-tools">Open Developer Tools</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#nodejs-modules-debugging">Node.js Modules Debugging</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#remote-debugging">Remote Debugging</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#using-devtools-extensions">Using devtools extensions</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#react-example">React Example</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#vue-example">Vue Example</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Package%20and%20Distribute/">Package and Distribute</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../FAQ/">FAQ</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Migration</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Migration/From%200.12%20to%200.13/">From 0.12 to 0.13</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Advanced</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Advanced/Build%20Flavors/">Build Flavors</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Advanced/Content%20Verification/">Content Verification</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Advanced/Customize%20Menubar/">Customize Menubar</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Advanced/JavaScript%20Contexts%20in%20NW.js/">JavaScript Contexts in NW.js</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Advanced/Protect%20JavaScript%20Source%20Code/">Protect JavaScript Source Code</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Advanced/Security%20in%20NW.js/">Security in NW.js</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Advanced/Support%20for%20Mac%20App%20Store/">Support for Mac App Store</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Advanced/Test%20with%20ChromeDriver/">Test with ChromeDriver</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Advanced/Transparent%20Window/">Transparent Window</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Advanced/Use%20Flash%20Plugin/">Use Flash Plugin</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Advanced/Use%20NaCl%20in%20NW.js/">Use NaCl in NW.js</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Advanced/Use%20Native%20Node%20Modules/">Use Native Node Modules</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Advanced/Autoupdates/">Autoupdates</a>
+                </li>
+    </ul>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">References</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../References/App/">App</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../References/Changes%20to%20DOM/">Changes to DOM</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../References/Changes%20to%20Node/">Changes to Node</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../References/Clipboard/">Clipboard</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../References/Command%20Line%20Options/">Command Line Options</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../References/Chrome%20Extension%20APIs/">Chrome Extension APIs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../References/Manifest%20Format/">Manifest Format</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../References/Menu/">Menu</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../References/MenuItem/">MenuItem</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../References/Screen/">Screen</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../References/Shell/">Shell</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../References/Shortcut/">Shortcut</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../References/Tray/">Tray</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../References/webview%20Tag/">webview Tag</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../References/Window/">Window</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">For Developers</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Developers/Building%20NW.js/">Building NW.js</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Developers/Contributing%20to%20NW.js/">Contributing to NW.js</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Developers/Enable%20Proprietary%20Codecs/">Enable Proprietary Codecs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Developers/Repositories/">Repositories</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Developers/Understanding%20Crash%20Dump/">Understanding Crash Dump</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Developers/Writing%20Documents%20for%20NW.js/">Writing Documents for NW.js</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Developers/Writing%20Test%20Cases%20for%20NW.js/">Writing Test Cases for NW.js</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Developers/Contributors%20of%20Documents/">Contributors of Documents</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">NW.js Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>For Users &raquo;</li>
+        
+      
+    
+    <li>Debugging with DevTools</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 class="doctitle" id="debugging-with-devtools">Debugging with DevTools</h1>
+<hr />
+<div class="admonition note">
+<p class="admonition-title">SDK Flavor Only</p>
+<p>DevTools is only available in <a href="../Advanced/Build%20Flavors/">SDK flavor</a>. It&rsquo;s recommended to use SDK flavor to develop and test your app. And use other flavors for production.</p>
+</div>
+<h2 id="open-developer-tools">Open Developer Tools</h2>
+<p>DevTools can be opened with keyboard shortcut <kbd>F12</kbd> on Windows and Linux or <kbd>&#8984;</kbd>+<kbd>&#8997;</kbd>+<kbd>i</kbd> on Mac.</p>
+<p>Alternatively, you may open DevTools programmatically using NW.js API <a href="../../References/Window/#winshowdevtoolsiframe-callback">win.showDevTools()</a> for a window.</p>
+<h2 id="nodejs-modules-debugging">Node.js Modules Debugging</h2>
+<p>NW.js is running in <a href="../Advanced/JavaScript%20Contexts%20in%20NW.js/#separate-context-mode">Separate Context Mode</a> by default. To debug Node.js modules, you can right click the app and choose &ldquo;Inspect Background Page&rdquo;. When stepping into Node.js modules in the debugger, the DevTools for background page is automatically focused and stopped at certain statement.</p>
+<p>If your app is running under <a href="../Advanced/JavaScript%20Contexts%20in%20NW.js/#mixed-context-mode">Mixed Context Mode</a>, Node.js modules can be directly debugged within the same DevTools window of the window. See <a href="../Advanced/JavaScript%20Contexts%20in%20NW.js/">JavaScript Contexts in NW.js</a> for the differences.</p>
+<h2 id="remote-debugging">Remote Debugging</h2>
+<p>You can use the <code>--remote-debugging-port=port</code> command line option to specify which port the DevTools should listen to. For example, by running <code>nw --remote-debugging-port=9222</code>, you can open <a href="http://localhost:9222/">http://localhost:9222/</a> in your browser to visit the debugger remotely.</p>
+<h2 id="using-devtools-extensions">Using devtools extensions</h2>
+<p>Devtools extensions are fully supported, including the one for ReactJS, Vue.js, etc. To use it, add the permission &ldquo;chrome-extension://*&rdquo; to manifest.json of the devtools extension, and load it with <code>--load-extension=path/to/extension</code> when nw is started. The files for devtools extensions can be copied from extension folder of Chrome browser after you install them from Chrome Web Store.</p>
+<h3 id="react-example">React Example</h3>
+<ul>
+<li><a href="https://s3-us-west-2.amazonaws.com/nwjs/sample/react-app.zip">https://s3-us-west-2.amazonaws.com/nwjs/sample/react-app.zip</a></li>
+<li><a href="https://s3-us-west-2.amazonaws.com/nwjs/sample/react-devtools.zip">https://s3-us-west-2.amazonaws.com/nwjs/sample/react-devtools.zip</a></li>
+</ul>
+<p>Unpack them, download the SDK build and run it with: <code>nw.exe --load-extension=path/to/devtools path/to/app/folder</code></p>
+<p>The app is a simple react app with &lsquo;package.json&rsquo; added. The devtools files are from the Chrome browser&rsquo;s extension folder of official react devtools extension installed from Chrome Web store. Only the manifest file is modified to add the permission: &ldquo;chrome-extension://*&rdquo;.</p>
+<h3 id="vue-example">Vue Example</h3>
+<ol>
+<li><code>npm install --save-dev nw-vue-devtools-prebuilt</code></li>
+<li>Add this to your <code>package.json</code>:<br />
+    <div class="highlight"><pre><span></span><code><span class="s2">&quot;chromium-args&quot;</span><span class="o">:</span> <span class="s2">&quot;--load-extension=&#39;./node_modules/nw-vue-devtools-prebuilt/extension&#39;&quot;</span><span class="p">,</span>
+</code></pre></div></li>
+<li>Vue.js must be in use in your app, and cannot be minified (use <code>vue.js</code> not <code>vue.min.js</code>).</li>
+</ol>
+<p>This will automatically download the latest Vue-DevTools from the Chrome WebStore, unpack and modify it to work in NW.js.</p>
+<p>If you are using <code>nwjs-builder-phoenix</code> then add in <code>"chromium-args"</code> to your <code>package.json</code> <code>build.strippedProperties</code> array.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Package%20and%20Distribute/" class="btn btn-neutral float-right" title="Package and Distribute">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Getting%20Started/" class="btn btn-neutral" title="Getting Started"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Getting%20Started/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Package%20and%20Distribute/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

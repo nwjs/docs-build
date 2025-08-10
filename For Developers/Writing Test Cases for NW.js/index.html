@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Writing Test Cases for NW.js - NW.js Documentation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Writing Test Cases for NW.js";
+    var mkdocs_page_input_path = "For Developers/Writing Test Cases for NW.js.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> NW.js Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Homepage</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">For Users</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Users/Getting%20Started/">Getting Started</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Users/Debugging%20with%20DevTools/">Debugging with DevTools</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Users/Package%20and%20Distribute/">Package and Distribute</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Users/FAQ/">FAQ</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Migration</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../For%20Users/Migration/From%200.12%20to%200.13/">From 0.12 to 0.13</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Advanced</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../For%20Users/Advanced/Build%20Flavors/">Build Flavors</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../For%20Users/Advanced/Content%20Verification/">Content Verification</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../For%20Users/Advanced/Customize%20Menubar/">Customize Menubar</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../For%20Users/Advanced/JavaScript%20Contexts%20in%20NW.js/">JavaScript Contexts in NW.js</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../For%20Users/Advanced/Protect%20JavaScript%20Source%20Code/">Protect JavaScript Source Code</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../For%20Users/Advanced/Security%20in%20NW.js/">Security in NW.js</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../For%20Users/Advanced/Support%20for%20Mac%20App%20Store/">Support for Mac App Store</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../For%20Users/Advanced/Test%20with%20ChromeDriver/">Test with ChromeDriver</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../For%20Users/Advanced/Transparent%20Window/">Transparent Window</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../For%20Users/Advanced/Use%20Flash%20Plugin/">Use Flash Plugin</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../For%20Users/Advanced/Use%20NaCl%20in%20NW.js/">Use NaCl in NW.js</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../For%20Users/Advanced/Use%20Native%20Node%20Modules/">Use Native Node Modules</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../For%20Users/Advanced/Autoupdates/">Autoupdates</a>
+                </li>
+    </ul>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">References</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../References/App/">App</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../References/Changes%20to%20DOM/">Changes to DOM</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../References/Changes%20to%20Node/">Changes to Node</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../References/Clipboard/">Clipboard</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../References/Command%20Line%20Options/">Command Line Options</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../References/Chrome%20Extension%20APIs/">Chrome Extension APIs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../References/Manifest%20Format/">Manifest Format</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../References/Menu/">Menu</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../References/MenuItem/">MenuItem</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../References/Screen/">Screen</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../References/Shell/">Shell</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../References/Shortcut/">Shortcut</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../References/Tray/">Tray</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../References/webview%20Tag/">webview Tag</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../References/Window/">Window</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">For Developers</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../Building%20NW.js/">Building NW.js</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Contributing%20to%20NW.js/">Contributing to NW.js</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Enable%20Proprietary%20Codecs/">Enable Proprietary Codecs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Repositories/">Repositories</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Understanding%20Crash%20Dump/">Understanding Crash Dump</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Writing%20Documents%20for%20NW.js/">Writing Documents for NW.js</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Writing Test Cases for NW.js</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#test-framework">Test Framework</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#write-test-cases">Write Test Cases</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#auto-test-case">Auto Test Case</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#remoting-test-case">Remoting Test Case</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#run-nightly-test-cases">Run Nightly Test Cases</a>
+    </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Contributors%20of%20Documents/">Contributors of Documents</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">NW.js Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>For Developers &raquo;</li>
+        
+      
+    
+    <li>Writing Test Cases for NW.js</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 class="doctitle" id="writing-test-cases-for-nwjs">Writing Test Cases for NW.js</h1>
+<hr />
+<div class="toc">
+<ul>
+<li><a href="#writing-test-cases-for-nwjs">Writing Test Cases for NW.js</a><ul>
+<li><a href="#test-framework">Test Framework</a></li>
+<li><a href="#write-test-cases">Write Test Cases</a><ul>
+<li><a href="#auto-test-case">Auto Test Case</a></li>
+<li><a href="#remoting-test-case">Remoting Test Case</a></li>
+</ul>
+</li>
+<li><a href="#run-nightly-test-cases">Run Nightly Test Cases</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="test-framework">Test Framework</h2>
+<p>NW.js is using a tiny Python based framework only in three files. You can read the source code in <a href="https://github.com/nwjs/nw.js/tree/nw13/test"><code>test</code> directory</a>.</p>
+<p>Each test case in NW.js is a runnable app, so that you can manually run the case without the framework.</p>
+<p>In NW.js, there are two types of test cases: <code>auto</code> and <code>remoting</code>. See <a href="#write-test-cases">Write Test Cases</a> sections below to see the instructions.</p>
+<p>To run the test cases, use the following command:</p>
+<div class="highlight"><pre><span></span><code>python test/test.py -t <span class="m">80</span> auto
+python test/test.py -t <span class="m">80</span> remoting
+</code></pre></div>
+<h2 id="write-test-cases">Write Test Cases</h2>
+<h3 id="auto-test-case">Auto Test Case</h3>
+<p><strong>TODO</strong></p>
+<h3 id="remoting-test-case">Remoting Test Case</h3>
+<p>The remoting test cases are driven by ChromeDriver. Usually these test cases involves user interaction. See <a href="../../For%20Users/Advanced/Test%20with%20ChromeDriver/">Test with ChromeDriver</a> for the usage of ChromeDriver.</p>
+<p>A remoting test case requires a <code>test.py</code> file in the root of the application folder.</p>
+<p>Here is the template of <code>test.py</code> file:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">os</span>
+
+<span class="kn">from</span> <span class="nn">selenium</span> <span class="kn">import</span> <span class="n">webdriver</span>
+<span class="kn">from</span> <span class="nn">selenium.webdriver.chrome.options</span> <span class="kn">import</span> <span class="n">Options</span>
+<span class="n">chrome_options</span> <span class="o">=</span> <span class="n">Options</span><span class="p">()</span>
+<span class="n">chrome_options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;nwapp=&quot;</span> <span class="o">+</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)))</span>
+
+<span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="o">.</span><span class="n">Chrome</span><span class="p">(</span><span class="n">executable_path</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;CHROMEDRIVER&#39;</span><span class="p">],</span> <span class="n">chrome_options</span><span class="o">=</span><span class="n">chrome_options</span><span class="p">)</span>
+<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="nb">print</span> <span class="n">driver</span><span class="o">.</span><span class="n">current_url</span>
+    <span class="c1"># Put your test code here using `assert`</span>
+<span class="k">finally</span><span class="p">:</span>
+    <span class="n">driver</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
+</code></pre></div>
+<p>The real case is an NW.js app. With ChromeDriver, you can simulate mouse clicks and inputs and then get the content of some DOM element. For example, with following code, when you click the button of &ldquo;Click Me&rdquo;, a new DOM element will be added to the document with content of &ldquo;success&rdquo;:</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;clickme&quot;</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;success()&quot;</span><span class="p">&gt;</span>Click Me<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="kd">function</span> <span class="nx">success</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">el</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">);</span>
+    <span class="nx">el</span><span class="p">.</span><span class="nx">id</span> <span class="o">=</span> <span class="s1">&#39;result&#39;</span><span class="p">;</span>
+    <span class="nx">el</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="s1">&#39;success&#39;</span><span class="p">;</span>
+    <span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">el</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>Then you can test it in <code>test.py</code> script:</p>
+<div class="highlight"><pre><span></span><code><span class="n">driver</span><span class="o">.</span><span class="n">implicitly_wait</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="c1"># 10s timeout when finding an element</span>
+
+<span class="n">clickme</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_id</span><span class="p">(</span><span class="s1">&#39;clickme&#39;</span><span class="p">)</span>
+<span class="n">clickme</span><span class="o">.</span><span class="n">click</span><span class="p">()</span> <span class="c1"># click the button</span>
+
+<span class="n">result</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_id</span><span class="p">(</span><span class="s1">&#39;result&#39;</span><span class="p">)</span>
+<span class="k">assert</span><span class="p">(</span><span class="s2">&quot;success&quot;</span> <span class="ow">in</span> <span class="n">result</span><span class="o">.</span><span class="n">get_attribute</span><span class="p">(</span><span class="s1">&#39;innerHTML&#39;</span><span class="p">))</span> <span class="c1"># assert &quot;success&quot; is in the element</span>
+</code></pre></div>
+<h2 id="run-nightly-test-cases">Run Nightly Test Cases</h2>
+<p>Here are some preparations before testing.</p>
+<p>1.Download NW SDK version.</p>
+<p>2.Downloading selenium python library for NW with git.<br />
+The repo address and the git commit id is in <a href="https://github.com/nwjs/nw.js/blob/nw35/DEPS">manage dependencies</a>(replace nw35 with the proper branch name if you are not testing 0.35).<br />
+Look for &lsquo;third_party/webdriver/pylib&rsquo; in deps part of that file. The form you will see is as follows:<br />
+<div class="highlight"><pre><span></span><code> <span class="s1">&#39;src/third_party/webdriver/pylib&#39;</span><span class="o">:</span>
+    <span class="nx">Var</span><span class="p">(</span><span class="s1">&#39;chromium_git&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;/external/selenium/py.git&#39;</span> <span class="o">+</span> <span class="s1">&#39;@&#39;</span> <span class="o">+</span> <span class="s1">&#39;expected commit id&#39;</span><span class="p">,</span>
+</code></pre></div><br />
+Then look for the value of Var(e.g.<code>chromium_git</code>) in vars part of that file. After you clone the pylib repo, make sure the git tip commit id is the same as expected.</p>
+<p>3.Set environment variables.<br />
+Set <code>CHROMEDRIVER</code> to the path of chromedriver.exe in NW SDK; set <code>PYTHONPATH</code> to the &lsquo;py&rsquo; folder you cloned.</p>
+<p>4.Install Python 2.7 if needed.</p>
+<p>5.Clone nw source repo: <a href="https://github.com/nwjs/nw.js">nwjs</a>.</p>
+<p>Then you can change directory to nw repo/test; <br />
+run <code>python test.py -d &lt;path to NW SDK&gt; -t 60 sanity</code></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Contributors%20of%20Documents/" class="btn btn-neutral float-right" title="Contributors of Documents">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Writing%20Documents%20for%20NW.js/" class="btn btn-neutral" title="Writing Documents for NW.js"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Writing%20Documents%20for%20NW.js/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Contributors%20of%20Documents/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

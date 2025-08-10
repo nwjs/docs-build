@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>Autoupdates - NW.js Documentation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../../css/theme.css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Autoupdates";
+    var mkdocs_page_input_path = "For Users/Advanced/Autoupdates.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> NW.js Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../..">Homepage</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">For Users</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../../Getting%20Started/">Getting Started</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Debugging%20with%20DevTools/">Debugging with DevTools</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Package%20and%20Distribute/">Package and Distribute</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../FAQ/">FAQ</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Migration</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Migration/From%200.12%20to%200.13/">From 0.12 to 0.13</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="#">Advanced</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../Build%20Flavors/">Build Flavors</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Content%20Verification/">Content Verification</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Customize%20Menubar/">Customize Menubar</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../JavaScript%20Contexts%20in%20NW.js/">JavaScript Contexts in NW.js</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Protect%20JavaScript%20Source%20Code/">Protect JavaScript Source Code</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Security%20in%20NW.js/">Security in NW.js</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Support%20for%20Mac%20App%20Store/">Support for Mac App Store</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Test%20with%20ChromeDriver/">Test with ChromeDriver</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Transparent%20Window/">Transparent Window</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Use%20Flash%20Plugin/">Use Flash Plugin</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Use%20NaCl%20in%20NW.js/">Use NaCl in NW.js</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Use%20Native%20Node%20Modules/">Use Native Node Modules</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Autoupdates</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#node-webkit-updater">node-webkit-updater</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#nwjs-autoupdater">nwjs-autoupdater</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#nw-autoupdater">nw-autoupdater</a>
+    </li>
+    </ul>
+                </li>
+    </ul>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">References</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../References/App/">App</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../References/Changes%20to%20DOM/">Changes to DOM</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../References/Changes%20to%20Node/">Changes to Node</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../References/Clipboard/">Clipboard</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../References/Command%20Line%20Options/">Command Line Options</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../References/Chrome%20Extension%20APIs/">Chrome Extension APIs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../References/Manifest%20Format/">Manifest Format</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../References/Menu/">Menu</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../References/MenuItem/">MenuItem</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../References/Screen/">Screen</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../References/Shell/">Shell</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../References/Shortcut/">Shortcut</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../References/Tray/">Tray</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../References/webview%20Tag/">webview Tag</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../References/Window/">Window</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">For Developers</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../For%20Developers/Building%20NW.js/">Building NW.js</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../For%20Developers/Contributing%20to%20NW.js/">Contributing to NW.js</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../For%20Developers/Enable%20Proprietary%20Codecs/">Enable Proprietary Codecs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../For%20Developers/Repositories/">Repositories</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../For%20Developers/Understanding%20Crash%20Dump/">Understanding Crash Dump</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../For%20Developers/Writing%20Documents%20for%20NW.js/">Writing Documents for NW.js</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../For%20Developers/Writing%20Test%20Cases%20for%20NW.js/">Writing Test Cases for NW.js</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../For%20Developers/Contributors%20of%20Documents/">Contributors of Documents</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">NW.js Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>For Users &raquo;</li>
+        
+      
+        
+          <li>Advanced &raquo;</li>
+        
+      
+    
+    <li>Autoupdates</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="autoupdates">Autoupdates</h1>
+<hr />
+<div class="toc">
+<ul>
+<li><a href="#autoupdates">Autoupdates</a><ul>
+<li><a href="#node-webkit-updater">node-webkit-updater</a></li>
+<li><a href="#nwjs-autoupdater">nwjs-autoupdater</a></li>
+<li><a href="#nw-autoupdater">nw-autoupdater</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<p>NW.js tend to support the update solution made by community, not a built-in one. Below is the list of existing soutions, which worth checking.<br />
+- <a href="https://github.com/edjafarov/node-webkit-updater">node-webkit-updater</a> (by <a href="https://github.com/edjafarov">@edjafarov</a>)<br />
+- <a href="https://github.com/oaleynik/nwjs-autoupdater">nwjs-autoupdater</a> (by <a href="https://github.com/oaleynik">@oaleynik</a>)<br />
+- <a href="https://github.com/dsheiko/nw-autoupdater">nw-autoupdater</a> (by <a href="https://github.com/dsheiko">@dsheiko</a>)</p>
+<h2 id="node-webkit-updater">node-webkit-updater</h2>
+<p>NPM module which gives you the low-level API to:</p>
+<ul>
+<li>Check the manifest for version (from your running &ldquo;old&rdquo; app).</li>
+<li>If the version is different from the running one, download new package to a temp directory.</li>
+<li>Unpack the package in temp.</li>
+<li>Run new app from temp and kill the old one (i.e. still all from the running app).</li>
+<li>The new app (in temp) will copy itself to the original folder, overwriting the old app.</li>
+<li>The new app will run itself from original folder and exit the process.</li>
+</ul>
+<p>You should build this logic by yourself though (<a href="https://github.com/edjafarov/node-webkit-updater/blob/master/examples/basic.js">basic example</a>).</p>
+<h2 id="nwjs-autoupdater">nwjs-autoupdater</h2>
+<p>The tiny golang application (when built it is just ~2MB), which can be bundled with NW.js application and then used to unpack updates.<br />
+To update target application updater needs to know two things - where zip archive with the new version is located and where is the app&rsquo;s executable to restart application after update. These can be passed to updater via command line arguments <code>--bundle</code> and <code>--inst-dir</code>, where <code>--bundle</code> is the path to the zip archive with the new app version and <code>--inst-dir</code> is the path to app&rsquo;s executable.</p>
+<p>There are multiple advantages over <code>node-webkit-updater</code>:</p>
+<ul>
+<li>It can update the updater itself.</li>
+<li>Doesn&rsquo;t require elevated privilegies (unless application itself has been installed in the folder which require elevated privilegies).</li>
+<li>Updater&rsquo;s executalbe has way smaller size as it doesn&rsquo;t require bundling the whole new NW.js application with the main application.</li>
+</ul>
+<p>The logic to check for updates needs to be built on your own too. The <a href="https://github.com/oaleynik/nwjs-autoupdater/blob/master/examples/index.js">example</a> shows the way how to use javascript module as an entry point for NW.js application and check for updates in background.</p>
+<h2 id="nw-autoupdater">nw-autoupdater</h2>
+<p>The NPM module provides API similar to one of <code>node-webkit-updater</code>, but extended, adapted for NW.js with Node 7.x and based on clean async/await syntax. Namely it allows to:<br />
+- Read the manifest from the remote release server<br />
+- Check if the version in the remote manifest greater than one of the local manifest<br />
+- Download the latest available version matching the host platform (according to the <code>packages</code> map of the remote manifest)<br />
+  - Subscribe for download progress events<br />
+- Unpack it in a temporary directory (zip or tar.gz)<br />
+  - Subscribe for install progress events<br />
+- Close the app and launch it (as a detached process) from the downloaded release (from temporary directory)<br />
+- Backup actual version and replace it with the new one<br />
+- Restart the updated app from its original location</p>
+<p>The package includes examples of release server and client.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../../References/App/" class="btn btn-neutral float-right" title="App">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Use%20Native%20Node%20Modules/" class="btn btn-neutral" title="Use Native Node Modules"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Use%20Native%20Node%20Modules/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../../References/App/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme_extra.js" defer></script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

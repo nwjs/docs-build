@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Shortcut - NW.js Documentation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Shortcut";
+    var mkdocs_page_input_path = "References/Shortcut.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> NW.js Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Homepage</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">For Users</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Users/Getting%20Started/">Getting Started</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Users/Debugging%20with%20DevTools/">Debugging with DevTools</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Users/Package%20and%20Distribute/">Package and Distribute</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Users/FAQ/">FAQ</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Migration</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../For%20Users/Migration/From%200.12%20to%200.13/">From 0.12 to 0.13</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Advanced</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../For%20Users/Advanced/Build%20Flavors/">Build Flavors</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../For%20Users/Advanced/Content%20Verification/">Content Verification</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../For%20Users/Advanced/Customize%20Menubar/">Customize Menubar</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../For%20Users/Advanced/JavaScript%20Contexts%20in%20NW.js/">JavaScript Contexts in NW.js</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../For%20Users/Advanced/Protect%20JavaScript%20Source%20Code/">Protect JavaScript Source Code</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../For%20Users/Advanced/Security%20in%20NW.js/">Security in NW.js</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../For%20Users/Advanced/Support%20for%20Mac%20App%20Store/">Support for Mac App Store</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../For%20Users/Advanced/Test%20with%20ChromeDriver/">Test with ChromeDriver</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../For%20Users/Advanced/Transparent%20Window/">Transparent Window</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../For%20Users/Advanced/Use%20Flash%20Plugin/">Use Flash Plugin</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../For%20Users/Advanced/Use%20NaCl%20in%20NW.js/">Use NaCl in NW.js</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../For%20Users/Advanced/Use%20Native%20Node%20Modules/">Use Native Node Modules</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../For%20Users/Advanced/Autoupdates/">Autoupdates</a>
+                </li>
+    </ul>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">References</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../App/">App</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Changes%20to%20DOM/">Changes to DOM</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Changes%20to%20Node/">Changes to Node</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Clipboard/">Clipboard</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Command%20Line%20Options/">Command Line Options</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Chrome%20Extension%20APIs/">Chrome Extension APIs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Manifest%20Format/">Manifest Format</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Menu/">Menu</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../MenuItem/">MenuItem</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Screen/">Screen</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Shell/">Shell</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Shortcut</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#synopsis">Synopsis</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#new-shortcutoption">new Shortcut(option)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#shortcutkey">shortcut.key</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#shortcutactive">shortcut.active</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#shortcutfailed">shortcut.failed</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#eventactive">Event:active</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#eventfailed">Event:failed</a>
+    </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Tray/">Tray</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../webview%20Tag/">webview Tag</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Window/">Window</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">For Developers</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Developers/Building%20NW.js/">Building NW.js</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Developers/Contributing%20to%20NW.js/">Contributing to NW.js</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Developers/Enable%20Proprietary%20Codecs/">Enable Proprietary Codecs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Developers/Repositories/">Repositories</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Developers/Understanding%20Crash%20Dump/">Understanding Crash Dump</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Developers/Writing%20Documents%20for%20NW.js/">Writing Documents for NW.js</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Developers/Writing%20Test%20Cases%20for%20NW.js/">Writing Test Cases for NW.js</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Developers/Contributors%20of%20Documents/">Contributors of Documents</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">NW.js Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>References &raquo;</li>
+        
+      
+    
+    <li>Shortcut</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 class="doctitle" id="shortcut">Shortcut</h1>
+<hr />
+<div class="toc">
+<ul>
+<li><a href="#shortcut">Shortcut</a><ul>
+<li><a href="#synopsis">Synopsis</a></li>
+<li><a href="#new-shortcutoption">new Shortcut(option)</a></li>
+<li><a href="#shortcutkey">shortcut.key</a></li>
+<li><a href="#shortcutactive">shortcut.active</a></li>
+<li><a href="#shortcutfailed">shortcut.failed</a></li>
+<li><a href="#eventactive">Event:active</a></li>
+<li><a href="#eventfailed">Event:failed</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<p><code>Shortcut</code> represents a global keyboard shortcut, also known as system-wide hotkey. If registered successfully, it works even if your app does <em>not</em> have focus.</p>
+<p><code>Shortcut</code> inherited from <a href="https://nodejs.org/api/events.html#events_class_events_eventemitter"><code>EventEmitter</code></a>. Every time the user presses the registered shortcut, your app will receive an <code>active</code> event of the shortcut object.</p>
+<h2 id="synopsis">Synopsis</h2>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">option</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">key</span> <span class="o">:</span> <span class="s2">&quot;Ctrl+Shift+A&quot;</span><span class="p">,</span>
+  <span class="nx">active</span> <span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Global desktop keyboard shortcut: &quot;</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">key</span> <span class="o">+</span> <span class="s2">&quot; active.&quot;</span><span class="p">);</span> 
+  <span class="p">},</span>
+  <span class="nx">failed</span> <span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">msg</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// :(, fail to register the |key| or couldn&#39;t parse the |key|.</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">msg</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+
+<span class="c1">// Create a shortcut with |option|.</span>
+<span class="kd">var</span> <span class="nx">shortcut</span> <span class="o">=</span> <span class="ow">new</span> <span class="nx">nw</span><span class="p">.</span><span class="nx">Shortcut</span><span class="p">(</span><span class="nx">option</span><span class="p">);</span>
+
+<span class="c1">// Register global desktop shortcut, which can work without focus.</span>
+<span class="nx">nw</span><span class="p">.</span><span class="nx">App</span><span class="p">.</span><span class="nx">registerGlobalHotKey</span><span class="p">(</span><span class="nx">shortcut</span><span class="p">);</span>
+
+<span class="c1">// If register |shortcut| successfully and user struck &quot;Ctrl+Shift+A&quot;, |shortcut|</span>
+<span class="c1">// will get an &quot;active&quot; event.</span>
+
+<span class="c1">// You can also add listener to shortcut&#39;s active and failed event.</span>
+<span class="nx">shortcut</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;active&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Global desktop keyboard shortcut: &quot;</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">key</span> <span class="o">+</span> <span class="s2">&quot; active.&quot;</span><span class="p">);</span> 
+<span class="p">});</span>
+
+<span class="nx">shortcut</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;failed&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">msg</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">msg</span><span class="p">);</span>
+<span class="p">});</span>
+
+<span class="c1">// Unregister the global desktop shortcut.</span>
+<span class="nx">nw</span><span class="p">.</span><span class="nx">App</span><span class="p">.</span><span class="nx">unregisterGlobalHotKey</span><span class="p">(</span><span class="nx">shortcut</span><span class="p">);</span>
+</code></pre></div>
+<h2 id="new-shortcutoption">new Shortcut(option)</h2>
+<ul>
+<li><code>option</code> <code>{Object}</code><ul>
+<li><code>key</code> <code>{String}</code> key combinations of the shortcut, such as <code>"ctrl+shift+a"</code>. See <a href="#shortcutkey">shortcut.key</a> property for details.</li>
+<li><code>active</code> <code>{Function}</code> <em>Optional</em> a callback when the hotkey is triggered. See <a href="#shortcutactive">shortcut.active</a> property for details.</li>
+<li><code>failed</code> <code>{Function}</code> <em>Optional</em> a callback when failed to register the hotkey. See <a href="#shortcutfailed">shortcut.failed</a> property for details.</li>
+</ul>
+</li>
+</ul>
+<p>Create new <code>Shortcut</code>, <code>option</code> is an object contains initial settings for the <code>Shortcut</code>.</p>
+<h2 id="shortcutkey">shortcut.key</h2>
+<p>Get the <code>key</code> of a <code>Shortcut</code>. It is a string to specify the shortcut key, like <code>"Ctrl+Alt+A"</code>. The key is consisted of zero or more <em>modifiers</em> and a <em>key</em> on your keyboard. Only one key code is supported. Key code is case insensitive.</p>
+<p>List of supported modifiers:</p>
+<ul>
+<li><code>Ctrl</code></li>
+<li><code>Alt</code></li>
+<li><code>Shift</code></li>
+<li><code>Command</code>: <code>Command</code> modifier maps to Apple key (<kbd>&#8984;</kbd>) on Mac, and maps to the Windows key on Windows and Linux.</li>
+</ul>
+<p>List of supported keys:</p>
+<ul>
+<li>Alphabet: <code>A</code>-<code>Z</code></li>
+<li>Digits: <code>0</code>-<code>9</code></li>
+<li>Function Keys: <code>F1</code>-<code>F24</code></li>
+<li><code>Comma</code></li>
+<li><code>Period</code></li>
+<li><code>Tab</code></li>
+<li><code>Home</code> / <code>End</code> / <code>PageUp</code> / <code>PageDown</code> / <code>Insert</code> / <code>Delete</code></li>
+<li><code>Up</code> / <code>Down</code> / <code>Left</code> / <code>Right</code></li>
+<li><code>MediaNextTrack</code> / <code>MediaPlayPause</code> / <code>MediaPrevTrack</code> / <code>MediaStop</code></li>
+<li><code>Comma</code> or <code>,</code></li>
+<li><code>Period</code> or <code>.</code></li>
+<li><code>Tab</code> or <code>\t</code></li>
+<li><code>Backquote</code> or <code>`</code></li>
+<li><code>Enter</code> or <code>\n</code></li>
+<li><code>Minus</code> or <code>-</code></li>
+<li><code>Equal</code> or <code>=</code></li>
+<li><code>Backslash</code> or <code>\</code></li>
+<li><code>Semicolon</code> or <code>;</code></li>
+<li><code>Quote</code> or <code>'</code></li>
+<li><code>BracketLeft</code> or <code>[</code></li>
+<li><code>BracketRight</code> or <code>]</code></li>
+<li><code>Escape</code></li>
+<li><a href="http://www.w3.org/TR/DOM-Level-3-Events-code/">DOM Level 3 W3C KeyboardEvent Code Values</a></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Single Key without Modifiers</p>
+<p>The API <code>App.registerGlobalHotKey()</code> can support applications intercepting a single key (like <code>{ key: "A"}</code>). But users will not be able to use &ldquo;A&rdquo; normally any more until the app unregisters it. However, the API doesn&rsquo;t limit this usage, and it would be useful if the applications wants to listen Media Keys.<br />
+<strong>Only use zero modifier when you are knowing what your are doing.</strong></p>
+</div>
+<h2 id="shortcutactive">shortcut.active</h2>
+<p>Get or set the <code>active</code> callback of a <code>Shortcut</code>. It will be called when user presses the shortcut.</p>
+<h2 id="shortcutfailed">shortcut.failed</h2>
+<p>*Get or set the <code>failed</code> callback of a <code>Shortcut</code>. It will be called when application passes an invalid key , or failed to register the key.</p>
+<h2 id="eventactive">Event:active</h2>
+<p>Same as <a href="#shortcutactive"><code>shortcut.active</code></a></p>
+<h2 id="eventfailed">Event:failed</h2>
+<p>Same as <a href="#shortcutfailed"><code>shortcut.failed</code></a></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Tray/" class="btn btn-neutral float-right" title="Tray">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Shell/" class="btn btn-neutral" title="Shell"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Shell/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Tray/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

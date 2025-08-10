@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>Customize Menubar - NW.js Documentation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../../css/theme.css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Customize Menubar";
+    var mkdocs_page_input_path = "For Users/Advanced/Customize Menubar.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> NW.js Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../..">Homepage</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">For Users</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../../Getting%20Started/">Getting Started</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Debugging%20with%20DevTools/">Debugging with DevTools</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Package%20and%20Distribute/">Package and Distribute</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../FAQ/">FAQ</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Migration</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Migration/From%200.12%20to%200.13/">From 0.12 to 0.13</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="#">Advanced</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../Build%20Flavors/">Build Flavors</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Content%20Verification/">Content Verification</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Customize Menubar</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#create-and-set-menubar">Create and Set Menubar</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#platform-differences">Platform Differences</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#windows-linux">Windows &amp; Linux</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#mac-os-x">Mac OS X</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#best-practice">Best practice</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../JavaScript%20Contexts%20in%20NW.js/">JavaScript Contexts in NW.js</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Protect%20JavaScript%20Source%20Code/">Protect JavaScript Source Code</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Security%20in%20NW.js/">Security in NW.js</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Support%20for%20Mac%20App%20Store/">Support for Mac App Store</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Test%20with%20ChromeDriver/">Test with ChromeDriver</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Transparent%20Window/">Transparent Window</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Use%20Flash%20Plugin/">Use Flash Plugin</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Use%20NaCl%20in%20NW.js/">Use NaCl in NW.js</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Use%20Native%20Node%20Modules/">Use Native Node Modules</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Autoupdates/">Autoupdates</a>
+                </li>
+    </ul>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">References</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../References/App/">App</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../References/Changes%20to%20DOM/">Changes to DOM</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../References/Changes%20to%20Node/">Changes to Node</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../References/Clipboard/">Clipboard</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../References/Command%20Line%20Options/">Command Line Options</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../References/Chrome%20Extension%20APIs/">Chrome Extension APIs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../References/Manifest%20Format/">Manifest Format</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../References/Menu/">Menu</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../References/MenuItem/">MenuItem</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../References/Screen/">Screen</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../References/Shell/">Shell</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../References/Shortcut/">Shortcut</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../References/Tray/">Tray</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../References/webview%20Tag/">webview Tag</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../References/Window/">Window</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">For Developers</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../For%20Developers/Building%20NW.js/">Building NW.js</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../For%20Developers/Contributing%20to%20NW.js/">Contributing to NW.js</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../For%20Developers/Enable%20Proprietary%20Codecs/">Enable Proprietary Codecs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../For%20Developers/Repositories/">Repositories</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../For%20Developers/Understanding%20Crash%20Dump/">Understanding Crash Dump</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../For%20Developers/Writing%20Documents%20for%20NW.js/">Writing Documents for NW.js</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../For%20Developers/Writing%20Test%20Cases%20for%20NW.js/">Writing Test Cases for NW.js</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../For%20Developers/Contributors%20of%20Documents/">Contributors of Documents</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">NW.js Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>For Users &raquo;</li>
+        
+      
+        
+          <li>Advanced &raquo;</li>
+        
+      
+    
+    <li>Customize Menubar</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="customize-menubar">Customize Menubar</h1>
+<hr />
+<div class="toc">
+<ul>
+<li><a href="#customize-menubar">Customize Menubar</a><ul>
+<li><a href="#create-and-set-menubar">Create and Set Menubar</a></li>
+<li><a href="#platform-differences">Platform Differences</a><ul>
+<li><a href="#windows-linux">Windows &amp; Linux</a></li>
+<li><a href="#mac-os-x">Mac OS X</a></li>
+</ul>
+</li>
+<li><a href="#best-practice">Best practice</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<p>Different platforms has different meanings of window menu, following discussions will show you the differences and provide best practice to keep window menu working decently on all platforms.</p>
+<h2 id="create-and-set-menubar">Create and Set Menubar</h2>
+<p>To create a menubar, you just need to specify <code>type: 'menubar'</code> in the option when you create the menu:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">your_menu</span> <span class="o">=</span> <span class="ow">new</span> <span class="nx">nw</span><span class="p">.</span><span class="nx">Menu</span><span class="p">({</span> <span class="nx">type</span><span class="o">:</span> <span class="s1">&#39;menubar&#39;</span> <span class="p">});</span>
+</code></pre></div>
+<p>And make sure every item appended to the menubar has a submenu. A normal text-only menu item on menubar makes no sense on most platforms.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">submenu</span> <span class="o">=</span> <span class="ow">new</span> <span class="nx">nw</span><span class="p">.</span><span class="nx">Menu</span><span class="p">();</span>
+<span class="nx">submenu</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="ow">new</span> <span class="nx">nw</span><span class="p">.</span><span class="nx">MenuItem</span><span class="p">({</span> <span class="nx">label</span><span class="o">:</span> <span class="s1">&#39;Item A&#39;</span> <span class="p">}));</span>
+<span class="nx">submenu</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="ow">new</span> <span class="nx">nw</span><span class="p">.</span><span class="nx">MenuItem</span><span class="p">({</span> <span class="nx">label</span><span class="o">:</span> <span class="s1">&#39;Item B&#39;</span> <span class="p">}));</span>
+
+<span class="c1">// the menu item appended should have a submenu</span>
+<span class="nx">your_menu</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="ow">new</span> <span class="nx">nw</span><span class="p">.</span><span class="nx">MenuItem</span><span class="p">({</span>
+  <span class="nx">label</span><span class="o">:</span> <span class="s1">&#39;First Menu&#39;</span><span class="p">,</span>
+  <span class="nx">submenu</span><span class="o">:</span> <span class="nx">submenu</span>
+<span class="p">}));</span>
+</code></pre></div>
+<p>Then you can set the window menu by setting the <code>menu</code> property of the window:</p>
+<div class="highlight"><pre><span></span><code><span class="nx">nw</span><span class="p">.</span><span class="nx">Window</span><span class="p">.</span><span class="nx">get</span><span class="p">().</span><span class="nx">menu</span> <span class="o">=</span> <span class="nx">your_menu</span><span class="p">;</span>
+</code></pre></div>
+<p>See both <a href="../../../References/Menu/">Menu</a> and <a href="../../../References/Window/">Window</a> for details of the API.</p>
+<h2 id="platform-differences">Platform Differences</h2>
+<h3 id="windows-linux">Windows &amp; Linux</h3>
+<p>On Windows and Linux, the menubars behave exactly the same. Each window can have one menubar and they all reside bellow the titlebar.</p>
+<div class="admonition tip">
+<p class="admonition-title">Menubar in Fullscreen / Kiosk Mode</p>
+<p>In fullscreen or kiosk mode, menubar is visible on top of the window on Windows and Linux. Setting <code>win.menu</code> to <code>null</code> can completely remove the menubar. See also <a href="../../../References/Window/#winmenu"><code>win.menu</code></a>.</p>
+</div>
+<h3 id="mac-os-x">Mac OS X</h3>
+<div class="admonition warning">
+<p class="admonition-title">Behavior Changed</p>
+<p>The behavior of the feature is changed since 0.13.0. Please see <a href="../../Migration/From%200.12%20to%200.13/#menu">Migration Notes from 0.12 to 0.13</a>.</p>
+</div>
+<p>On Mac, one app can only have one menu, which is called application menu, no matter how many windows the app may have. And many key shortcuts rely on the existence of application menu, such as <em>Quit</em>, <em>Close</em> and <em>Copy</em>.</p>
+<p>By default, NW.js app will start with default menus, including <em>your-app-name</em>, <em>Edit</em> and <em>Window</em>. You can get the default menus using the <a href="../../../References/Menu/#menucreatemacbuiltinappname-options-mac">menu.createMacBuiltin</a> method and customize it as you need:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">mb</span> <span class="o">=</span> <span class="ow">new</span> <span class="nx">nw</span><span class="p">.</span><span class="nx">Menu</span><span class="p">({</span><span class="nx">type</span><span class="o">:</span><span class="s2">&quot;menubar&quot;</span><span class="p">});</span>
+<span class="nx">mb</span><span class="p">.</span><span class="nx">createMacBuiltin</span><span class="p">(</span><span class="s2">&quot;your-app-name&quot;</span><span class="p">);</span>
+<span class="c1">// append, insert or delete items of `mb` to customize your own menu</span>
+<span class="c1">// then ...</span>
+<span class="nx">nw</span><span class="p">.</span><span class="nx">Window</span><span class="p">.</span><span class="nx">get</span><span class="p">().</span><span class="nx">menu</span> <span class="o">=</span> <span class="nx">mb</span><span class="p">;</span>
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Fix the Title of Application Menu</p>
+<p>The first item of application menu shows <em>nwjs</em> instead of <em>your-app-name</em>. To fix it, you need to set the value of <code>CFBundleName</code> in all files of <code>nwjs.app/Contents/Resources/*.lproj/InfoPlist.strings</code> to <code>your-app-name</code> instead of <code>nwjs</code>.</p>
+</div>
+<h2 id="best-practice">Best practice</h2>
+<p>As mentioned above, on Windows and Linux each window can have one menubar, while on Mac an app can have only one application menu. So generally you should set menu for only your main window and avoid using window menu when you may have multiple main windows.</p>
+<p>And it may happens that you want to design different menus for different platforms, then you can use <a href="http://nodejs.org/api/process.html#process_process_platform">process.platform</a> to get which platform you&rsquo;re in.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../JavaScript%20Contexts%20in%20NW.js/" class="btn btn-neutral float-right" title="JavaScript Contexts in NW.js">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Content%20Verification/" class="btn btn-neutral" title="Content Verification"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Content%20Verification/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../JavaScript%20Contexts%20in%20NW.js/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme_extra.js" defer></script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
