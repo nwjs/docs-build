@@ -1,72 +1,65 @@
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  
-  
-  <link rel="shortcut icon" href="../../../img/favicon.ico">
-  <title>Use Native Node Modules - NW.js Documentation</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
-
-  <link rel="stylesheet" href="../../../css/theme.css" />
-  <link rel="stylesheet" href="../../../css/theme_extra.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
-  
-  <script>
-    // Current page data
-    var mkdocs_page_name = "Use Native Node Modules";
-    var mkdocs_page_input_path = "For Users/Advanced/Use Native Node Modules.md";
-    var mkdocs_page_url = null;
-  </script>
-  
-  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
-  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script> 
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Use Native Node Modules - NW.js Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Use Native Node Modules";
+        var mkdocs_page_input_path = "For Users/Advanced/Use Native Node Modules.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
 </head>
 
 <body class="wy-body-for-nav" role="document">
 
   <div class="wy-grid-for-nav">
-
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-        <a href="../../.." class="icon icon-home"> NW.js Documentation</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+          <a href="../../.." class="icon icon-home"> NW.js Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form-alt" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
   </form>
 </div>
       </div>
 
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../..">Homepage</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">For Users</span></p>
-                <ul class="current">
-                    <li class="toctree-l1"><a class="reference internal" href="../../Getting%20Started/">Getting Started</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../Debugging%20with%20DevTools/">Debugging with DevTools</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../Package%20and%20Distribute/">Package and Distribute</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../FAQ/">FAQ</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="#">Migration</a>
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Homepage</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">For Users</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../../Getting%20Started/">Getting Started</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Debugging%20with%20DevTools/">Debugging with DevTools</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Package%20and%20Distribute/">Package and Distribute</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../FAQ/">FAQ</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Migration</a>
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../../Migration/From%200.12%20to%200.13/">From 0.12 to 0.13</a>
                 </li>
     </ul>
-                    </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="#">Advanced</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Advanced</a>
     <ul class="current">
                 <li class="toctree-l2"><a class="reference internal" href="../Build%20Flavors/">Build Flavors</a>
                 </li>
@@ -90,7 +83,7 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../Use%20NaCl%20in%20NW.js/">Use NaCl in NW.js</a>
                 </li>
-                <li class="toctree-l2 current"><a class="reference internal current" href="./">Use Native Node Modules</a>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Use Native Node Modules</a>
     <ul class="current">
     <li class="toctree-l3"><a class="reference internal" href="#install-with-npm">Install with NPM</a>
         <ul>
@@ -113,100 +106,84 @@
                 <li class="toctree-l2"><a class="reference internal" href="../Autoupdates/">Autoupdates</a>
                 </li>
     </ul>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">References</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../References/App/">App</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../References/Changes%20to%20DOM/">Changes to DOM</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../References/Changes%20to%20Node/">Changes to Node</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../References/Clipboard/">Clipboard</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../References/Command%20Line%20Options/">Command Line Options</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../References/Chrome%20Extension%20APIs/">Chrome Extension APIs</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../References/Manifest%20Format/">Manifest Format</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../References/Menu/">Menu</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../References/MenuItem/">MenuItem</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../References/Screen/">Screen</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../References/Shell/">Shell</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../References/Shortcut/">Shortcut</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../References/Tray/">Tray</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../References/webview%20Tag/">webview Tag</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../References/Window/">Window</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">For Developers</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../For%20Developers/Building%20NW.js/">Building NW.js</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../For%20Developers/Contributing%20to%20NW.js/">Contributing to NW.js</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../For%20Developers/Enable%20Proprietary%20Codecs/">Enable Proprietary Codecs</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../For%20Developers/Repositories/">Repositories</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../For%20Developers/Understanding%20Crash%20Dump/">Understanding Crash Dump</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../For%20Developers/Writing%20Documents%20for%20NW.js/">Writing Documents for NW.js</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../For%20Developers/Writing%20Test%20Cases%20for%20NW.js/">Writing Test Cases for NW.js</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../For%20Developers/Contributors%20of%20Documents/">Contributors of Documents</a>
-                    </li>
-                </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">References</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../References/App/">App</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../References/Changes%20to%20DOM/">Changes to DOM</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../References/Changes%20to%20Node/">Changes to Node</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../References/Clipboard/">Clipboard</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../References/Command%20Line%20Options/">Command Line Options</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../References/Chrome%20Extension%20APIs/">Chrome Extension APIs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../References/Manifest%20Format/">Manifest Format</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../References/Menu/">Menu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../References/MenuItem/">MenuItem</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../References/Screen/">Screen</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../References/Shell/">Shell</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../References/Shortcut/">Shortcut</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../References/Tray/">Tray</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../References/webview%20Tag/">webview Tag</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../References/Window/">Window</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">For Developers</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../For%20Developers/Building%20NW.js/">Building NW.js</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../For%20Developers/Contributing%20to%20NW.js/">Contributing to NW.js</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../For%20Developers/Enable%20Proprietary%20Codecs/">Enable Proprietary Codecs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../For%20Developers/Repositories/">Repositories</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../For%20Developers/Understanding%20Crash%20Dump/">Understanding Crash Dump</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../For%20Developers/Writing%20Documents%20for%20NW.js/">Writing Documents for NW.js</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../For%20Developers/Writing%20Test%20Cases%20for%20NW.js/">Writing Test Cases for NW.js</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../For%20Developers/Contributors%20of%20Documents/">Contributors of Documents</a>
+                  </li>
+              </ul>
       </div>
     </div>
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../../..">NW.js Documentation</a>
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">NW.js Documentation</a>
+        
       </nav>
-
-      
       <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href="../../..">Docs</a> &raquo;</li>
-    
-      
-        
-          <li>For Users &raquo;</li>
-        
-      
-        
-          <li>Advanced &raquo;</li>
-        
-      
-    
-    <li>Use Native Node Modules</li>
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">For Users</li>
+          <li class="breadcrumb-item">Advanced</li>
+      <li class="breadcrumb-item active">Use Native Node Modules</li>
     <li class="wy-breadcrumbs-aside">
-      
     </li>
   </ul>
-  
   <hr/>
 </div>
-
-          <div role="main">
-            <div class="section">
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
               
                 <h1 class="doctitle" id="use-native-node-modules">Use Native Node Modules</h1>
 <hr />
@@ -247,19 +224,19 @@
 <p>If you are using non-LTS release, <code>nw-gyp</code> is required to be pre-installed globally to build modules due to <a href="https://github.com/nwjs/nw.js/issues/5025">ABI differences in V8</a>. These instructions below works for LTS releases as well.</p>
 <p>To install native modules for NW.js, run following commands in your terminal:</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Install nw-gyp globally</span>
-npm install -g nw-gyp
+npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>nw-gyp
 <span class="c1"># Setup target NW.js version</span>
-<span class="nb">export</span> <span class="nv">npm_config_target</span><span class="o">=</span><span class="m">0</span>.18.5
+<span class="nb">export</span><span class="w"> </span><span class="nv">npm_config_target</span><span class="o">=</span><span class="m">0</span>.18.5
 <span class="c1"># Setup build architecture, ia32 or x64</span>
-<span class="nb">export</span> <span class="nv">npm_config_arch</span><span class="o">=</span>x64
-<span class="nb">export</span> <span class="nv">npm_config_target_arch</span><span class="o">=</span>x64
+<span class="nb">export</span><span class="w"> </span><span class="nv">npm_config_arch</span><span class="o">=</span>x64
+<span class="nb">export</span><span class="w"> </span><span class="nv">npm_config_target_arch</span><span class="o">=</span>x64
 <span class="c1"># Setup env for modules built with node-pre-gyp</span>
-<span class="nb">export</span> <span class="nv">npm_config_runtime</span><span class="o">=</span>node-webkit
-<span class="nb">export</span> <span class="nv">npm_config_build_from_source</span><span class="o">=</span><span class="nb">true</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">npm_config_runtime</span><span class="o">=</span>node-webkit
+<span class="nb">export</span><span class="w"> </span><span class="nv">npm_config_build_from_source</span><span class="o">=</span><span class="nb">true</span>
 <span class="c1"># Setup nw-gyp as node-gyp</span>
-<span class="nb">export</span> <span class="nv">npm_config_node_gyp</span><span class="o">=</span><span class="k">$(</span>which nw-gyp<span class="k">)</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">npm_config_node_gyp</span><span class="o">=</span><span class="k">$(</span>which<span class="w"> </span>nw-gyp<span class="k">)</span>
 <span class="c1"># Run npm install</span>
-npm install
+npm<span class="w"> </span>install
 </code></pre></div>
 <div class="admonition warning">
 <p class="admonition-title">Note for Windows</p>
@@ -288,44 +265,36 @@ npm install --msvs_version=2015
 <h3 id="nw-gyp">nw-gyp</h3>
 <p><a href="https://github.com/nwjs/nw-gyp"><code>nw-gyp</code></a> is a hack on <code>node-gyp</code> to support NW.js specific headers and libraries.</p>
 <p>The usage is the same with <code>node-gyp</code>, except that you need to specify the version and arch (<code>x64</code> or <code>ia32</code>) of NW.js manually.</p>
-<div class="highlight"><pre><span></span><code>npm install -g nw-gyp
-<span class="nb">cd</span> myaddon
-nw-gyp rebuild --target<span class="o">=</span><span class="m">0</span>.13.0 --arch<span class="o">=</span>x64
+<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>nw-gyp
+<span class="nb">cd</span><span class="w"> </span>myaddon
+nw-gyp<span class="w"> </span>rebuild<span class="w"> </span>--target<span class="o">=</span><span class="m">0</span>.13.0<span class="w"> </span>--arch<span class="o">=</span>x64
 </code></pre></div>
 <p>See <a href="https://github.com/nwjs/nw-gyp">https://github.com/nwjs/nw-gyp</a> for more details.</p>
 <h3 id="node-pre-gyp">node-pre-gyp</h3>
 <p>Some packages uses <a href="https://github.com/mapbox/node-pre-gyp">node-pre-gyp</a>, which supports building for both Node.js and NW.js by using either <code>node-gyp</code> or <code>nw-gyp</code>.</p>
 <p>The usage of <code>node-pre-gyp</code> is as following:</p>
-<div class="highlight"><pre><span></span><code>npm install -g node-pre-gyp
-<span class="nb">cd</span> myaddon
-node-pre-gyp build --runtime<span class="o">=</span>node-webkit --target<span class="o">=</span><span class="m">0</span>.13.0 --target_arch<span class="o">=</span>x64
+<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>node-pre-gyp
+<span class="nb">cd</span><span class="w"> </span>myaddon
+node-pre-gyp<span class="w"> </span>build<span class="w"> </span>--runtime<span class="o">=</span>node-webkit<span class="w"> </span>--target<span class="o">=</span><span class="m">0</span>.13.0<span class="w"> </span>--target_arch<span class="o">=</span>x64
 </code></pre></div>
 <p>See <a href="https://github.com/mapbox/node-pre-gyp">https://github.com/mapbox/node-pre-gyp</a> for more details.</p>
               
             </div>
-          </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../Use%20NaCl%20in%20NW.js/" class="btn btn-neutral float-left" title="Use NaCl in NW.js"><span class="icon icon-circle-arrow-left"></span> Previous</a>
         <a href="../Autoupdates/" class="btn btn-neutral float-right" title="Autoupdates">Next <span class="icon icon-circle-arrow-right"></span></a>
-      
-      
-        <a href="../Use%20NaCl%20in%20NW.js/" class="btn btn-neutral" title="Use NaCl in NW.js"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <!-- Copyright etc -->
-    
   </div>
 
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
-      
+          
         </div>
       </div>
 
@@ -333,7 +302,7 @@ node-pre-gyp build --runtime<span class="o">=</span>node-webkit --target<span cl
 
   </div>
 
-  <div class="rst-versions" role="note" aria-label="versions">
+  <div class="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
@@ -344,14 +313,15 @@ node-pre-gyp build --runtime<span class="o">=</span>node-webkit --target<span cl
     
   </span>
 </div>
-    <script>var base_url = '../../..';</script>
-    <script src="../../../js/theme_extra.js" defer></script>
-    <script src="../../../js/theme.js" defer></script>
-      <script src="../../../search/main.js" defer></script>
-    <script defer>
-        window.onload = function () {
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
             SphinxRtdTheme.Navigation.enable(true);
-        };
+        });
     </script>
 
 </body>

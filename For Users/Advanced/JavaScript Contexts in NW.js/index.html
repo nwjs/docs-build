@@ -1,72 +1,65 @@
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  
-  
-  <link rel="shortcut icon" href="../../../img/favicon.ico">
-  <title>JavaScript Contexts in NW.js - NW.js Documentation</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
-
-  <link rel="stylesheet" href="../../../css/theme.css" />
-  <link rel="stylesheet" href="../../../css/theme_extra.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
-  
-  <script>
-    // Current page data
-    var mkdocs_page_name = "JavaScript Contexts in NW.js";
-    var mkdocs_page_input_path = "For Users/Advanced/JavaScript Contexts in NW.js.md";
-    var mkdocs_page_url = null;
-  </script>
-  
-  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
-  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script> 
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>JavaScript Contexts in NW.js - NW.js Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "JavaScript Contexts in NW.js";
+        var mkdocs_page_input_path = "For Users/Advanced/JavaScript Contexts in NW.js.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
 </head>
 
 <body class="wy-body-for-nav" role="document">
 
   <div class="wy-grid-for-nav">
-
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-        <a href="../../.." class="icon icon-home"> NW.js Documentation</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+          <a href="../../.." class="icon icon-home"> NW.js Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form-alt" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
   </form>
 </div>
       </div>
 
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../..">Homepage</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">For Users</span></p>
-                <ul class="current">
-                    <li class="toctree-l1"><a class="reference internal" href="../../Getting%20Started/">Getting Started</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../Debugging%20with%20DevTools/">Debugging with DevTools</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../Package%20and%20Distribute/">Package and Distribute</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../FAQ/">FAQ</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="#">Migration</a>
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Homepage</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">For Users</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../../Getting%20Started/">Getting Started</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Debugging%20with%20DevTools/">Debugging with DevTools</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Package%20and%20Distribute/">Package and Distribute</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../FAQ/">FAQ</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Migration</a>
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../../Migration/From%200.12%20to%200.13/">From 0.12 to 0.13</a>
                 </li>
     </ul>
-                    </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="#">Advanced</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Advanced</a>
     <ul class="current">
                 <li class="toctree-l2"><a class="reference internal" href="../Build%20Flavors/">Build Flavors</a>
                 </li>
@@ -74,7 +67,7 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../Customize%20Menubar/">Customize Menubar</a>
                 </li>
-                <li class="toctree-l2 current"><a class="reference internal current" href="./">JavaScript Contexts in NW.js</a>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">JavaScript Contexts in NW.js</a>
     <ul class="current">
     <li class="toctree-l3"><a class="reference internal" href="#concept-of-javascript-context">Concept of JavaScript Context</a>
     </li>
@@ -133,100 +126,84 @@
                 <li class="toctree-l2"><a class="reference internal" href="../Autoupdates/">Autoupdates</a>
                 </li>
     </ul>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">References</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../References/App/">App</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../References/Changes%20to%20DOM/">Changes to DOM</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../References/Changes%20to%20Node/">Changes to Node</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../References/Clipboard/">Clipboard</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../References/Command%20Line%20Options/">Command Line Options</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../References/Chrome%20Extension%20APIs/">Chrome Extension APIs</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../References/Manifest%20Format/">Manifest Format</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../References/Menu/">Menu</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../References/MenuItem/">MenuItem</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../References/Screen/">Screen</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../References/Shell/">Shell</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../References/Shortcut/">Shortcut</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../References/Tray/">Tray</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../References/webview%20Tag/">webview Tag</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../References/Window/">Window</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">For Developers</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../For%20Developers/Building%20NW.js/">Building NW.js</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../For%20Developers/Contributing%20to%20NW.js/">Contributing to NW.js</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../For%20Developers/Enable%20Proprietary%20Codecs/">Enable Proprietary Codecs</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../For%20Developers/Repositories/">Repositories</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../For%20Developers/Understanding%20Crash%20Dump/">Understanding Crash Dump</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../For%20Developers/Writing%20Documents%20for%20NW.js/">Writing Documents for NW.js</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../For%20Developers/Writing%20Test%20Cases%20for%20NW.js/">Writing Test Cases for NW.js</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../For%20Developers/Contributors%20of%20Documents/">Contributors of Documents</a>
-                    </li>
-                </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">References</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../References/App/">App</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../References/Changes%20to%20DOM/">Changes to DOM</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../References/Changes%20to%20Node/">Changes to Node</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../References/Clipboard/">Clipboard</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../References/Command%20Line%20Options/">Command Line Options</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../References/Chrome%20Extension%20APIs/">Chrome Extension APIs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../References/Manifest%20Format/">Manifest Format</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../References/Menu/">Menu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../References/MenuItem/">MenuItem</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../References/Screen/">Screen</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../References/Shell/">Shell</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../References/Shortcut/">Shortcut</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../References/Tray/">Tray</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../References/webview%20Tag/">webview Tag</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../References/Window/">Window</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">For Developers</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../For%20Developers/Building%20NW.js/">Building NW.js</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../For%20Developers/Contributing%20to%20NW.js/">Contributing to NW.js</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../For%20Developers/Enable%20Proprietary%20Codecs/">Enable Proprietary Codecs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../For%20Developers/Repositories/">Repositories</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../For%20Developers/Understanding%20Crash%20Dump/">Understanding Crash Dump</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../For%20Developers/Writing%20Documents%20for%20NW.js/">Writing Documents for NW.js</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../For%20Developers/Writing%20Test%20Cases%20for%20NW.js/">Writing Test Cases for NW.js</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../For%20Developers/Contributors%20of%20Documents/">Contributors of Documents</a>
+                  </li>
+              </ul>
       </div>
     </div>
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../../..">NW.js Documentation</a>
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">NW.js Documentation</a>
+        
       </nav>
-
-      
       <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href="../../..">Docs</a> &raquo;</li>
-    
-      
-        
-          <li>For Users &raquo;</li>
-        
-      
-        
-          <li>Advanced &raquo;</li>
-        
-      
-    
-    <li>JavaScript Contexts in NW.js</li>
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">For Users</li>
+          <li class="breadcrumb-item">Advanced</li>
+      <li class="breadcrumb-item active">JavaScript Contexts in NW.js</li>
     <li class="wy-breadcrumbs-aside">
-      
     </li>
   </ul>
-  
   <hr/>
 </div>
-
-          <div role="main">
-            <div class="section">
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
               
                 <h1 class="doctitle" id="javascript-contexts-in-nwjs">JavaScript Contexts in NW.js</h1>
 <hr />
@@ -264,7 +241,7 @@
 <li><a href="#problem-with-instanceof">Problem with instanceOf</a></li>
 <li><a href="#problem-with-objconstructor">Problem with obj.constructor</a></li>
 <li><a href="#problem-of-obj__proto__">Problem of obj.__proto__</a></li>
-<li><a href="#problems-in-3rd-party-library">Problems in 3<sup>rd</sup>-Party Library</a></li>
+<li><a href="#problems-in-3rd-party-library">Problems in 3rd-Party Library</a></li>
 <li><a href="#reliable-way-of-type-checking-across-contexts">Reliable Way of Type Checking Across Contexts</a></li>
 </ul>
 </li>
@@ -332,14 +309,14 @@
 <p>See following example for how to achieve this.</p>
 <p>Following script are running in Node context (myscript.js):<br />
 <div class="highlight"><pre><span></span><code><span class="c1">// `el` should be passed from browser context</span>
-<span class="nx">exports</span><span class="p">.</span><span class="nx">setText</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">el</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">el</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="s1">&#39;hello&#39;</span><span class="p">;</span>
+<span class="nx">exports</span><span class="p">.</span><span class="nx">setText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="p">(</span><span class="nx">el</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">el</span><span class="p">.</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;hello&#39;</span><span class="p">;</span>
 <span class="p">};</span>
 </code></pre></div></p>
 <p>In the browser side (index.html):<br />
 <div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;el&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
-<span class="kd">var</span> <span class="nx">myscript</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;./myscript&#39;</span><span class="p">);</span>
+<span class="kd">var</span><span class="w"> </span><span class="nx">myscript</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;./myscript&#39;</span><span class="p">);</span>
 <span class="c1">// pass the `el` element to the Node function</span>
 <span class="nx">myscript</span><span class="p">.</span><span class="nx">setText</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;el&#39;</span><span class="p">));</span>
 <span class="c1">// you will see &quot;hello&quot; in the element</span>
@@ -360,27 +337,27 @@
 <p>In Mixed context, you can use all browser and NW.js API in Node modules, and vice versa.</p>
 <p><code>package.json</code><br />
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="s2">&quot;name&quot;</span><span class="o">:</span> <span class="s2">&quot;test-context&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;main&quot;</span><span class="o">:</span> <span class="s2">&quot;index.html&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;chromium-args&quot;</span><span class="o">:</span> <span class="s2">&quot;--mixed-context&quot;</span>
+<span class="w">    </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;test-context&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;main&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;index.html&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;chromium-args&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;--mixed-context&quot;</span>
 <span class="p">}</span>
 </code></pre></div></p>
 <p><code>myscript.js</code><br />
-<div class="highlight"><pre><span></span><code><span class="nx">exports</span><span class="p">.</span><span class="nx">createDate</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="ow">new</span> <span class="nb">Date</span><span class="p">();</span>
+<div class="highlight"><pre><span></span><code><span class="nx">exports</span><span class="p">.</span><span class="nx">createDate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
 <span class="p">};</span>
 
-<span class="nx">exports</span><span class="p">.</span><span class="nx">showAlert</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-    <span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;I&#39;m running in Node module!&quot;</span><span class="p">);</span>
+<span class="nx">exports</span><span class="p">.</span><span class="nx">showAlert</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;I&#39;m running in Node module!&quot;</span><span class="p">);</span>
 <span class="p">};</span>
 </code></pre></div></p>
 <p>Then following comparison will success in Mixed context:<br />
 <code>index.html</code><br />
 <div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
-<span class="kd">var</span> <span class="nx">myscript</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;./myscript&#39;</span><span class="p">);</span>
+<span class="kd">var</span><span class="w"> </span><span class="nx">myscript</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;./myscript&#39;</span><span class="p">);</span>
 
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">myscript</span><span class="p">.</span><span class="nx">createDate</span><span class="p">()</span> <span class="ow">instanceof</span> <span class="nb">Date</span><span class="p">);</span> <span class="c1">// true</span>
-<span class="nx">myscript</span><span class="p">.</span><span class="nx">showAlert</span><span class="p">();</span> <span class="c1">// I&#39;m running in Node module!</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">myscript</span><span class="p">.</span><span class="nx">createDate</span><span class="p">()</span><span class="w"> </span><span class="ow">instanceof</span><span class="w"> </span><span class="nb">Date</span><span class="p">);</span><span class="w"> </span><span class="c1">// true</span>
+<span class="nx">myscript</span><span class="p">.</span><span class="nx">showAlert</span><span class="p">();</span><span class="w"> </span><span class="c1">// I&#39;m running in Node module!</span>
 <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </code></pre></div></p>
 <h3 id="comparing-with-separate-context">Comparing with Separate Context</h3>
@@ -393,20 +370,20 @@
 <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
 <span class="c1">// `window` is the global object of current browser context</span>
 <span class="c1">// `myframe.contentWindow` is the global object of the `&lt;iframe&gt;`&#39;s browser context</span>
-<span class="kd">var</span> <span class="nx">currentContext</span> <span class="o">=</span> <span class="nb">window</span><span class="p">;</span>
-<span class="kd">var</span> <span class="nx">iframeContext</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;myframe&#39;</span><span class="p">).</span><span class="nx">contentWindow</span><span class="p">;</span>
+<span class="kd">var</span><span class="w"> </span><span class="nx">currentContext</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">window</span><span class="p">;</span>
+<span class="kd">var</span><span class="w"> </span><span class="nx">iframeContext</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;myframe&#39;</span><span class="p">).</span><span class="nx">contentWindow</span><span class="p">;</span>
 
 <span class="c1">// `myfunc` is defined in current context</span>
-<span class="kd">function</span> <span class="nx">myfunc</span><span class="p">()</span> <span class="p">{</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">myfunc</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 
 <span class="p">}</span>
 
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">currentContext</span><span class="p">.</span><span class="nb">Date</span> <span class="o">===</span> <span class="nx">iframeContext</span><span class="p">.</span><span class="nb">Date</span><span class="p">);</span> <span class="c1">// false</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">currentContext</span><span class="p">.</span><span class="nb">Function</span> <span class="o">===</span> <span class="nx">iframeContext</span><span class="p">.</span><span class="nb">Function</span><span class="p">);</span> <span class="c1">// false</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">myfunc</span> <span class="ow">instanceof</span> <span class="nx">currentContext</span><span class="p">.</span><span class="nb">Function</span><span class="p">);</span> <span class="c1">// true</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">myfunc</span> <span class="ow">instanceof</span> <span class="nx">iframeContext</span><span class="p">.</span><span class="nb">Function</span><span class="p">);</span> <span class="c1">// false</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">myfunc</span><span class="p">.</span><span class="kr">constructor</span> <span class="o">===</span> <span class="nx">currentContext</span><span class="p">.</span><span class="nb">Function</span><span class="p">);</span> <span class="c1">// true</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">myfunc</span><span class="p">.</span><span class="kr">constructor</span> <span class="o">===</span> <span class="nx">iframeContext</span><span class="p">.</span><span class="nb">Function</span><span class="p">);</span> <span class="c1">// false</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">currentContext</span><span class="p">.</span><span class="nb">Date</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="nx">iframeContext</span><span class="p">.</span><span class="nb">Date</span><span class="p">);</span><span class="w"> </span><span class="c1">// false</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">currentContext</span><span class="p">.</span><span class="nb">Function</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="nx">iframeContext</span><span class="p">.</span><span class="nb">Function</span><span class="p">);</span><span class="w"> </span><span class="c1">// false</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">myfunc</span><span class="w"> </span><span class="ow">instanceof</span><span class="w"> </span><span class="nx">currentContext</span><span class="p">.</span><span class="nb">Function</span><span class="p">);</span><span class="w"> </span><span class="c1">// true</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">myfunc</span><span class="w"> </span><span class="ow">instanceof</span><span class="w"> </span><span class="nx">iframeContext</span><span class="p">.</span><span class="nb">Function</span><span class="p">);</span><span class="w"> </span><span class="c1">// false</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">myfunc</span><span class="p">.</span><span class="kr">constructor</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="nx">currentContext</span><span class="p">.</span><span class="nb">Function</span><span class="p">);</span><span class="w"> </span><span class="c1">// true</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">myfunc</span><span class="p">.</span><span class="kr">constructor</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="nx">iframeContext</span><span class="p">.</span><span class="nb">Function</span><span class="p">);</span><span class="w"> </span><span class="c1">// false</span>
 <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </code></pre></div>
 <h3 id="problem-with-instanceof">Problem with <code>instanceOf</code></h3>
@@ -423,37 +400,29 @@
 <p>You may use <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray"><code>Array.isArray</code></a> method to check whether a value is an array, and that method works reliably across contexts.</p>
 <p>For testing if <code>someValue</code> is an object of other context dependent globals, like <code>Function</code> or <code>Date</code> etc., you may use following tricks to test the actual types:</p>
 <div class="highlight"><pre><span></span><code><span class="c1">// test a function</span>
-<span class="nb">Object</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">toString</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="nx">someValue</span><span class="p">)</span> <span class="o">===</span> <span class="s2">&quot;[object Function]&quot;</span>
+<span class="nb">Object</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">toString</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="nx">someValue</span><span class="p">)</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s2">&quot;[object Function]&quot;</span>
 <span class="c1">// test a Date</span>
-<span class="nb">Object</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">toString</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="nx">someValue</span><span class="p">)</span> <span class="o">===</span> <span class="s2">&quot;[object Date]&quot;</span>
+<span class="nb">Object</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">toString</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="nx">someValue</span><span class="p">)</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s2">&quot;[object Date]&quot;</span>
 </code></pre></div>
 <p>However, if such a convenient alternate method is not readily available, or when you face a problem in someone other&rsquo;s (not your own) code and patching that would need a hassle, then another workaround is necessary.</p>
 <p>Also you can use <a href="https://github.com/Mithgol/nwglobal"><code>nwglobal</code></a>, which returns the global objects in Node context, to workaround the type checking in some cases.</p>
               
             </div>
-          </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../Customize%20Menubar/" class="btn btn-neutral float-left" title="Customize Menubar"><span class="icon icon-circle-arrow-left"></span> Previous</a>
         <a href="../Protect%20JavaScript%20Source%20Code/" class="btn btn-neutral float-right" title="Protect JavaScript Source Code">Next <span class="icon icon-circle-arrow-right"></span></a>
-      
-      
-        <a href="../Customize%20Menubar/" class="btn btn-neutral" title="Customize Menubar"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <!-- Copyright etc -->
-    
   </div>
 
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
-      
+          
         </div>
       </div>
 
@@ -461,7 +430,7 @@
 
   </div>
 
-  <div class="rst-versions" role="note" aria-label="versions">
+  <div class="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
@@ -472,14 +441,15 @@
     
   </span>
 </div>
-    <script>var base_url = '../../..';</script>
-    <script src="../../../js/theme_extra.js" defer></script>
-    <script src="../../../js/theme.js" defer></script>
-      <script src="../../../search/main.js" defer></script>
-    <script defer>
-        window.onload = function () {
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
             SphinxRtdTheme.Navigation.enable(true);
-        };
+        });
     </script>
 
 </body>

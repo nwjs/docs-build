@@ -1,72 +1,65 @@
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  
-  
-  <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Building NW.js - NW.js Documentation</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
-
-  <link rel="stylesheet" href="../../css/theme.css" />
-  <link rel="stylesheet" href="../../css/theme_extra.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
-  
-  <script>
-    // Current page data
-    var mkdocs_page_name = "Building NW.js";
-    var mkdocs_page_input_path = "For Developers/Building NW.js.md";
-    var mkdocs_page_url = null;
-  </script>
-  
-  <script src="../../js/jquery-2.1.1.min.js" defer></script>
-  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script> 
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Building NW.js - NW.js Documentation</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Building NW.js";
+        var mkdocs_page_input_path = "For Developers/Building NW.js.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
 </head>
 
 <body class="wy-body-for-nav" role="document">
 
   <div class="wy-grid-for-nav">
-
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-        <a href="../.." class="icon icon-home"> NW.js Documentation</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+          <a href="../.." class="icon icon-home"> NW.js Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form-alt" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
   </form>
 </div>
       </div>
 
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../..">Homepage</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">For Users</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Users/Getting%20Started/">Getting Started</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Users/Debugging%20with%20DevTools/">Debugging with DevTools</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Users/Package%20and%20Distribute/">Package and Distribute</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Users/FAQ/">FAQ</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="#">Migration</a>
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Homepage</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">For Users</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../For%20Users/Getting%20Started/">Getting Started</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../For%20Users/Debugging%20with%20DevTools/">Debugging with DevTools</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../For%20Users/Package%20and%20Distribute/">Package and Distribute</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../For%20Users/FAQ/">FAQ</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Migration</a>
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../../For%20Users/Migration/From%200.12%20to%200.13/">From 0.12 to 0.13</a>
                 </li>
     </ul>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="#">Advanced</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Advanced</a>
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../../For%20Users/Advanced/Build%20Flavors/">Build Flavors</a>
                 </li>
@@ -95,44 +88,44 @@
                 <li class="toctree-l2"><a class="reference internal" href="../../For%20Users/Advanced/Autoupdates/">Autoupdates</a>
                 </li>
     </ul>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">References</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../References/App/">App</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../References/Changes%20to%20DOM/">Changes to DOM</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../References/Changes%20to%20Node/">Changes to Node</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../References/Clipboard/">Clipboard</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../References/Command%20Line%20Options/">Command Line Options</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../References/Chrome%20Extension%20APIs/">Chrome Extension APIs</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../References/Manifest%20Format/">Manifest Format</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../References/Menu/">Menu</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../References/MenuItem/">MenuItem</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../References/Screen/">Screen</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../References/Shell/">Shell</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../References/Shortcut/">Shortcut</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../References/Tray/">Tray</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../References/webview%20Tag/">webview Tag</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../References/Window/">Window</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">For Developers</span></p>
-                <ul class="current">
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Building NW.js</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">References</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../References/App/">App</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../References/Changes%20to%20DOM/">Changes to DOM</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../References/Changes%20to%20Node/">Changes to Node</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../References/Clipboard/">Clipboard</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../References/Command%20Line%20Options/">Command Line Options</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../References/Chrome%20Extension%20APIs/">Chrome Extension APIs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../References/Manifest%20Format/">Manifest Format</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../References/Menu/">Menu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../References/MenuItem/">MenuItem</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../References/Screen/">Screen</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../References/Shell/">Shell</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../References/Shortcut/">Shortcut</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../References/Tray/">Tray</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../References/webview%20Tag/">webview Tag</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../References/Window/">Window</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">For Developers</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Building NW.js</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#prerequisites">Prerequisites</a>
     </li>
@@ -157,58 +150,45 @@
     <li class="toctree-l2"><a class="reference internal" href="#build-faster">Build Faster</a>
     </li>
     </ul>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Contributing%20to%20NW.js/">Contributing to NW.js</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Enable%20Proprietary%20Codecs/">Enable Proprietary Codecs</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Repositories/">Repositories</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Understanding%20Crash%20Dump/">Understanding Crash Dump</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Writing%20Documents%20for%20NW.js/">Writing Documents for NW.js</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Writing%20Test%20Cases%20for%20NW.js/">Writing Test Cases for NW.js</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Contributors%20of%20Documents/">Contributors of Documents</a>
-                    </li>
-                </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Contributing%20to%20NW.js/">Contributing to NW.js</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Enable%20Proprietary%20Codecs/">Enable Proprietary Codecs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Repositories/">Repositories</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Understanding%20Crash%20Dump/">Understanding Crash Dump</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Writing%20Documents%20for%20NW.js/">Writing Documents for NW.js</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Writing%20Test%20Cases%20for%20NW.js/">Writing Test Cases for NW.js</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Contributors%20of%20Documents/">Contributors of Documents</a>
+                  </li>
+              </ul>
       </div>
     </div>
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../..">NW.js Documentation</a>
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">NW.js Documentation</a>
+        
       </nav>
-
-      
       <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href="../..">Docs</a> &raquo;</li>
-    
-      
-        
-          <li>For Developers &raquo;</li>
-        
-      
-    
-    <li>Building NW.js</li>
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">For Developers</li>
+      <li class="breadcrumb-item active">Building NW.js</li>
     <li class="wy-breadcrumbs-aside">
-      
     </li>
   </ul>
-  
   <hr/>
 </div>
-
-          <div role="main">
-            <div class="section">
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
               
                 <h1 class="doctitle" id="building-nwjs">Building NW.js</h1>
 <hr />
@@ -255,9 +235,9 @@ Debug version should be built with component build configuration. See the <a hre
 </div>
 <h2 id="get-the-code">Get the Code</h2>
 <p><strong>Step 1.</strong> Create a folder for holding NW.js source code, like <code>$HOME/nwjs</code>, and run following command in the folder to generate <code>.gclient</code> file:</p>
-<div class="highlight"><pre><span></span><code>mkdir -p <span class="nv">$HOME</span>/nwjs
-<span class="nb">cd</span> <span class="nv">$HOME</span>/nwjs
-gclient config --name<span class="o">=</span>src https://github.com/nwjs/chromium.src.git@origin/nw17
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>-p<span class="w"> </span><span class="nv">$HOME</span>/nwjs
+<span class="nb">cd</span><span class="w"> </span><span class="nv">$HOME</span>/nwjs
+gclient<span class="w"> </span>config<span class="w"> </span>--name<span class="o">=</span>src<span class="w"> </span>https://github.com/nwjs/chromium.src.git@origin/nw17
 </code></pre></div>
 <p>Generally if you are not interested in running Chromium tests, you don&rsquo;t have to sync the test cases and reference builds, which saves you lot of time. Open the <code>.gclient</code> file you just created and replace <code>custom_deps</code> section with followings:</p>
 <div class="highlight"><pre><span></span><code><span class="s2">&quot;custom_deps&quot;</span> <span class="p">:</span> <span class="p">{</span>
@@ -303,8 +283,8 @@ gclient config --name<span class="o">=</span>src https://github.com/nwjs/chromiu
 <p>If you are building on Linux <strong>for the first time</strong>, you need to run <code>gclient sync --with_branch_heads --nohooks</code> and then run <code>./build/install-build-deps.sh</code> to install dependencies on Ubuntu. See <a href="http://dev.chromium.org/developers/how-tos/get-the-code">Chromium document</a> for detailed instructions of getting the source code.</p>
 </div>
 <h2 id="generate-ninja-build-files-with-gn-for-chromium">Generate ninja build files with GN for Chromium</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span> src
-gn gen out/nw  <span class="o">(</span>changing the <span class="s1">&#39;nw&#39;</span> part of the path is not supported. You<span class="s1">&#39;d better not changing the &#39;</span>out<span class="s1">&#39; part if you&#39;</span>re new to this<span class="o">)</span>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>src
+gn<span class="w"> </span>gen<span class="w"> </span>out/nw<span class="w">  </span><span class="o">(</span>changing<span class="w"> </span>the<span class="w"> </span><span class="s1">&#39;nw&#39;</span><span class="w"> </span>part<span class="w"> </span>of<span class="w"> </span>the<span class="w"> </span>path<span class="w"> </span>is<span class="w"> </span>not<span class="w"> </span>supported.<span class="w"> </span>You<span class="s1">&#39;d better not changing the &#39;</span>out<span class="s1">&#39; part if you&#39;</span>re<span class="w"> </span>new<span class="w"> </span>to<span class="w"> </span>this<span class="o">)</span>
 </code></pre></div>
 <p>Use flags like our official build:<br />
 <div class="highlight"><pre><span></span><code>is_debug=false
@@ -320,11 +300,11 @@ GYP_GENERATORS=ninja
 GYP_CHROMIUM_NO_ACTION=0
 GYP_GENERATOR_FLAGS=output_dir=out
 </code></pre></div></p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span> src
-python3 third_party/node-nw/tools/gyp/gyp_main.py -I third_party/node-nw/common.gypi -D <span class="nv">msvs_version</span><span class="o">=</span><span class="m">2021</span> -D <span class="nv">build_type</span><span class="o">=</span>Release_x64 third_party/node-nw/node.gyp
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>src
+python3<span class="w"> </span>third_party/node-nw/tools/gyp/gyp_main.py<span class="w"> </span>-I<span class="w"> </span>third_party/node-nw/common.gypi<span class="w"> </span>-D<span class="w"> </span><span class="nv">msvs_version</span><span class="o">=</span><span class="m">2021</span><span class="w"> </span>-D<span class="w"> </span><span class="nv">build_type</span><span class="o">=</span>Release_x64<span class="w"> </span>third_party/node-nw/node.gyp
 </code></pre></div>
 <p>or use the following if you&rsquo;re doing a component build:<br />
-<div class="highlight"><pre><span></span><code>python3 third_party/node-nw/tools/gyp/gyp_main.py -D <span class="nv">component</span><span class="o">=</span>shared_library -I third_party/node-nw/common.gypi -D <span class="nv">msvs_version</span><span class="o">=</span><span class="m">2021</span> -D <span class="nv">build_type</span><span class="o">=</span>Release_x64 third_party/node-nw/node.gyp
+<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>third_party/node-nw/tools/gyp/gyp_main.py<span class="w"> </span>-D<span class="w"> </span><span class="nv">component</span><span class="o">=</span>shared_library<span class="w"> </span>-I<span class="w"> </span>third_party/node-nw/common.gypi<span class="w"> </span>-D<span class="w"> </span><span class="nv">msvs_version</span><span class="o">=</span><span class="m">2021</span><span class="w"> </span>-D<span class="w"> </span><span class="nv">build_type</span><span class="o">=</span>Release_x64<span class="w"> </span>third_party/node-nw/node.gyp
 </code></pre></div><br />
 To change the build configuration for Node, you need to setup the GYP_DEFINES environment variable:</p>
 <h3 id="32-bit64-bit-build">32-bit/64-bit Build</h3>
@@ -347,8 +327,8 @@ To change the build configuration for Node, you need to setup the GYP_DEFINES en
 </ul>
 <h2 id="build-nwjs">Build nwjs</h2>
 <p>ninja build files are generated in <code>out/nw</code> folder after you run GN. Run following command in your terminal will generate the Debug build of standard NW.js binaries in <code>out/nw</code> folder:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span> src
-ninja -C out/nw nwjs
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>src
+ninja<span class="w"> </span>-C<span class="w"> </span>out/nw<span class="w"> </span>nwjs
 </code></pre></div>
 <div class="admonition tip">
 <p class="admonition-title">Build Time</p>
@@ -356,12 +336,12 @@ ninja -C out/nw nwjs
 </div>
 <p>To build 32-bit/64-bit binaries or non-standard build flavors, you need to edit out/nw/args.gn file And then re-run the commands above to generate binaries.</p>
 <h2 id="build-node">Build Node</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span> src
-ninja -C out/Release node
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>src
+ninja<span class="w"> </span>-C<span class="w"> </span>out/Release<span class="w"> </span>node
 </code></pre></div>
 <p>After building Node, the final step is to copy the build Node library to the nwjs binary folder:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span> src
-ninja -C out/nw copy_node
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>src
+ninja<span class="w"> </span>-C<span class="w"> </span>out/nw<span class="w"> </span>copy_node
 </code></pre></div>
 <h2 id="build-flavors">Build Flavors</h2>
 <ul>
@@ -379,29 +359,21 @@ ninja -C out/nw copy_node
 </ul>
               
             </div>
-          </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../References/Window/" class="btn btn-neutral float-left" title="Window"><span class="icon icon-circle-arrow-left"></span> Previous</a>
         <a href="../Contributing%20to%20NW.js/" class="btn btn-neutral float-right" title="Contributing to NW.js">Next <span class="icon icon-circle-arrow-right"></span></a>
-      
-      
-        <a href="../../References/Window/" class="btn btn-neutral" title="Window"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <!-- Copyright etc -->
-    
   </div>
 
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
-      
+          
         </div>
       </div>
 
@@ -409,7 +381,7 @@ ninja -C out/nw copy_node
 
   </div>
 
-  <div class="rst-versions" role="note" aria-label="versions">
+  <div class="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
@@ -420,14 +392,15 @@ ninja -C out/nw copy_node
     
   </span>
 </div>
-    <script>var base_url = '../..';</script>
-    <script src="../../js/theme_extra.js" defer></script>
-    <script src="../../js/theme.js" defer></script>
-      <script src="../../search/main.js" defer></script>
-    <script defer>
-        window.onload = function () {
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
             SphinxRtdTheme.Navigation.enable(true);
-        };
+        });
     </script>
 
 </body>

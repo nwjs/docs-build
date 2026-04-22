@@ -1,72 +1,65 @@
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  
-  
-  <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Manifest Format - NW.js Documentation</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
-
-  <link rel="stylesheet" href="../../css/theme.css" />
-  <link rel="stylesheet" href="../../css/theme_extra.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
-  
-  <script>
-    // Current page data
-    var mkdocs_page_name = "Manifest Format";
-    var mkdocs_page_input_path = "References/Manifest Format.md";
-    var mkdocs_page_url = null;
-  </script>
-  
-  <script src="../../js/jquery-2.1.1.min.js" defer></script>
-  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script> 
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Manifest Format - NW.js Documentation</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Manifest Format";
+        var mkdocs_page_input_path = "References/Manifest Format.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
 </head>
 
 <body class="wy-body-for-nav" role="document">
 
   <div class="wy-grid-for-nav">
-
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-        <a href="../.." class="icon icon-home"> NW.js Documentation</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+          <a href="../.." class="icon icon-home"> NW.js Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form-alt" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
   </form>
 </div>
       </div>
 
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../..">Homepage</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">For Users</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Users/Getting%20Started/">Getting Started</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Users/Debugging%20with%20DevTools/">Debugging with DevTools</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Users/Package%20and%20Distribute/">Package and Distribute</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Users/FAQ/">FAQ</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="#">Migration</a>
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Homepage</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">For Users</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../For%20Users/Getting%20Started/">Getting Started</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../For%20Users/Debugging%20with%20DevTools/">Debugging with DevTools</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../For%20Users/Package%20and%20Distribute/">Package and Distribute</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../For%20Users/FAQ/">FAQ</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Migration</a>
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../../For%20Users/Migration/From%200.12%20to%200.13/">From 0.12 to 0.13</a>
                 </li>
     </ul>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="#">Advanced</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Advanced</a>
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../../For%20Users/Advanced/Build%20Flavors/">Build Flavors</a>
                 </li>
@@ -95,23 +88,23 @@
                 <li class="toctree-l2"><a class="reference internal" href="../../For%20Users/Advanced/Autoupdates/">Autoupdates</a>
                 </li>
     </ul>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">References</span></p>
-                <ul class="current">
-                    <li class="toctree-l1"><a class="reference internal" href="../App/">App</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Changes%20to%20DOM/">Changes to DOM</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Changes%20to%20Node/">Changes to Node</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Clipboard/">Clipboard</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Command%20Line%20Options/">Command Line Options</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Chrome%20Extension%20APIs/">Chrome Extension APIs</a>
-                    </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Manifest Format</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">References</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../App/">App</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Changes%20to%20DOM/">Changes to DOM</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Changes%20to%20Node/">Changes to Node</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Clipboard/">Clipboard</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Command%20Line%20Options/">Command Line Options</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Chrome%20Extension%20APIs/">Chrome Extension APIs</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Manifest Format</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#quick-start">Quick Start</a>
     </li>
@@ -220,79 +213,66 @@
     <li class="toctree-l2"><a class="reference internal" href="#other-fields">Other Fields</a>
     </li>
     </ul>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Menu/">Menu</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../MenuItem/">MenuItem</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Screen/">Screen</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Shell/">Shell</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Shortcut/">Shortcut</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Tray/">Tray</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../webview%20Tag/">webview Tag</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Window/">Window</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">For Developers</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Developers/Building%20NW.js/">Building NW.js</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Developers/Contributing%20to%20NW.js/">Contributing to NW.js</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Developers/Enable%20Proprietary%20Codecs/">Enable Proprietary Codecs</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Developers/Repositories/">Repositories</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Developers/Understanding%20Crash%20Dump/">Understanding Crash Dump</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Developers/Writing%20Documents%20for%20NW.js/">Writing Documents for NW.js</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Developers/Writing%20Test%20Cases%20for%20NW.js/">Writing Test Cases for NW.js</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../For%20Developers/Contributors%20of%20Documents/">Contributors of Documents</a>
-                    </li>
-                </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Menu/">Menu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../MenuItem/">MenuItem</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Screen/">Screen</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Shell/">Shell</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Shortcut/">Shortcut</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Tray/">Tray</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../webview%20Tag/">webview Tag</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Window/">Window</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">For Developers</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../For%20Developers/Building%20NW.js/">Building NW.js</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../For%20Developers/Contributing%20to%20NW.js/">Contributing to NW.js</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../For%20Developers/Enable%20Proprietary%20Codecs/">Enable Proprietary Codecs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../For%20Developers/Repositories/">Repositories</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../For%20Developers/Understanding%20Crash%20Dump/">Understanding Crash Dump</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../For%20Developers/Writing%20Documents%20for%20NW.js/">Writing Documents for NW.js</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../For%20Developers/Writing%20Test%20Cases%20for%20NW.js/">Writing Test Cases for NW.js</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../For%20Developers/Contributors%20of%20Documents/">Contributors of Documents</a>
+                  </li>
+              </ul>
       </div>
     </div>
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../..">NW.js Documentation</a>
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">NW.js Documentation</a>
+        
       </nav>
-
-      
       <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href="../..">Docs</a> &raquo;</li>
-    
-      
-        
-          <li>References &raquo;</li>
-        
-      
-    
-    <li>Manifest Format</li>
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">References</li>
+      <li class="breadcrumb-item active">Manifest Format</li>
     <li class="wy-breadcrumbs-aside">
-      
     </li>
   </ul>
-  
   <hr/>
 </div>
-
-          <div role="main">
-            <div class="section">
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
               
                 <h1 class="doctitle" id="manifest-format">Manifest Format</h1>
 <hr />
@@ -363,10 +343,10 @@
 <p>Every app package should contain a manifest file named <code>package.json</code> in the format of <a href="http://www.json.org/">JSON</a>. This document will help you understand the meaning of each field of the manifest.</p>
 <h2 id="quick-start">Quick Start</h2>
 <p>Following is a minimal manifest:<br />
-<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;main&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;index.html&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;nw-demo&quot;</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;main&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;index.html&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;nw-demo&quot;</span>
+<span class="p">}</span>
 </code></pre></div></p>
 <p>You only need at least these two fields to start with an NW.js app. Here is the quick explanation of them:</p>
 <ul>
@@ -480,11 +460,11 @@
 <ul>
 <li><code>{String}</code> Specify the flags passed to JS engine (v8). e.g. turn on Harmony Proxies and Collections feature:</li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;nw-demo&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;main&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;index.html&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;js-flags&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;--harmony_proxies --harmony_collections&quot;</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;nw-demo&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;main&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;index.html&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;js-flags&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;--harmony_proxies --harmony_collections&quot;</span>
+<span class="p">}</span>
 </code></pre></div>
 <p>A list of supported V8 flags can be found here: <a href="https://chromium.googlesource.com/v8/v8/+/master/src/flag-definitions.h">https://chromium.googlesource.com/v8/v8/+/master/src/flag-definitions.h</a></p>
 <h3 id="inject_js_start">inject_js_start</h3>
@@ -600,12 +580,12 @@
 </ul>
 <p>Beware, if frame is set to false in fullscreen it will prevent the mouse from being captured on the very edges of the screen. You should avoid activating it if fullscreen is also set to true.</p>
 <p>Frameless apps do not have a title bar for the user to click and drag the window. You can use CSS to designate DOM elements as draggable regions.</p>
-<div class="highlight"><pre><span></span><code><span class="p">.</span><span class="nc">drag-enable</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="kp">-webkit-</span><span class="n">app-region</span><span class="p">:</span><span class="w"> </span><span class="n">drag</span><span class="p">;</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
-<span class="p">.</span><span class="nc">drag-disable</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="kp">-webkit-</span><span class="n">app-region</span><span class="p">:</span><span class="w"> </span><span class="n">no-drag</span><span class="p">;</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="p">.</span><span class="nc">drag-enable</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kp">-webkit-</span><span class="n">app-region</span><span class="p">:</span><span class="w"> </span><span class="n">drag</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">.</span><span class="nc">drag-disable</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kp">-webkit-</span><span class="n">app-region</span><span class="p">:</span><span class="w"> </span><span class="n">no-drag</span><span class="p">;</span>
+<span class="p">}</span>
 </code></pre></div>
 <h3 id="show">show</h3>
 <ul>
@@ -634,29 +614,21 @@
 <p>The <a href="http://wiki.commonjs.org/wiki/Packages/1.0">Packages/1.0</a> standard specifies many other fields <code>package.json</code> should provide. Currently we don&rsquo;t make use of them, but you provide them still.</p>
               
             </div>
-          </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../Chrome%20Extension%20APIs/" class="btn btn-neutral float-left" title="Chrome Extension APIs"><span class="icon icon-circle-arrow-left"></span> Previous</a>
         <a href="../Menu/" class="btn btn-neutral float-right" title="Menu">Next <span class="icon icon-circle-arrow-right"></span></a>
-      
-      
-        <a href="../Chrome%20Extension%20APIs/" class="btn btn-neutral" title="Chrome Extension APIs"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <!-- Copyright etc -->
-    
   </div>
 
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
-      
+          
         </div>
       </div>
 
@@ -664,7 +636,7 @@
 
   </div>
 
-  <div class="rst-versions" role="note" aria-label="versions">
+  <div class="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
@@ -675,14 +647,15 @@
     
   </span>
 </div>
-    <script>var base_url = '../..';</script>
-    <script src="../../js/theme_extra.js" defer></script>
-    <script src="../../js/theme.js" defer></script>
-      <script src="../../search/main.js" defer></script>
-    <script defer>
-        window.onload = function () {
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
             SphinxRtdTheme.Navigation.enable(true);
-        };
+        });
     </script>
 
 </body>
