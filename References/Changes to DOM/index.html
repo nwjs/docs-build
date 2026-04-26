@@ -283,14 +283,17 @@
 <p>NW.js extended <code>&lt;iframe&gt;</code> tag for easier developing native apps. Thoses features enables apps to bypass the restrictions of Sandbox and Same Origin Policy etc.</p>
 <p>See also <a href="../webview%20Tag/">webview Tag</a> for the new <code>&lt;webview&gt;</code> tag.</p>
 <h3 id="attribute-nwdisable">Attribute: nwdisable</h3>
-<p>Make the frame and subframes normal frames.</p>
+<p>Make the frame and subframes normal frames. This disables Node.js APIs (<code>require</code>, <code>nw</code>, etc.) in the frame.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This attribute doesn&rsquo;t prevent the page in normal frames accessing its parent and top frames. Then they can still get access to Node.js APIs. So usually you may want to use this attribute with <code>nwfaketop</code> togather.</p>
+<p><code>nwdisable</code> alone is sufficient to prevent the iframe from accessing Node.js APIs. You do NOT need to add <code>nwfaketop</code> unless you specifically want to prevent the iframe from accessing <code>window.parent</code> or <code>window.top</code>.</p>
 </div>
 <h3 id="attribute-nwfaketop">Attribute: nwfaketop</h3>
 <p>Prevent web page in the frame accessing the real <code>window.parent</code> or <code>window.top</code>. They will get the faked parent and top, which is its own <code>window</code> object of the frame. Subframes will also be affected.</p>
-<p>This attribute is usually used with <code>nwdisable</code>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Using <code>nwfaketop</code> will break <code>window.parent.postMessage()</code> since the iframe&rsquo;s <code>parent</code> is replaced with its own <code>window</code>. Only use this if you need to hide the parent frame from the iframe content.</p>
+</div>
 <h3 id="attribute-nwuseragent">Attribute: nwUserAgent</h3>
 <p>Override the default user-agent when loading the web page in the frame and sub frames. See <a href="../Manifest%20Format/#user-agent"><code>user-agent</code> in manifest</a> for details.</p>
 <h2 id="webview-tag">webview tag</h2>
