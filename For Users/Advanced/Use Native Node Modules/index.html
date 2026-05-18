@@ -85,7 +85,9 @@
                 </li>
                 <li class="toctree-l2 current"><a class="reference internal current" href="#">Use Native Node Modules</a>
     <ul class="current">
-    <li class="toctree-l3"><a class="reference internal" href="#install-with-npm">Install with NPM</a>
+    <li class="toctree-l3"><a class="reference internal" href="#install-with-npm-v01113-and-later">Install with NPM (v0.111.3 and later)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#install-with-npm-before-v01113">Install with NPM (before v0.111.3)</a>
         <ul>
     <li class="toctree-l4"><a class="reference internal" href="#for-lts-releases">For LTS Releases</a>
     </li>
@@ -95,7 +97,9 @@
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#manually-rebuild">Manually Rebuild</a>
         <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#nw-gyp">nw-gyp</a>
+    <li class="toctree-l4"><a class="reference internal" href="#node-gyp-v01113">node-gyp (v0.111.3+)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#nw-gyp-before-v01113">nw-gyp (before v0.111.3)</a>
     </li>
     <li class="toctree-l4"><a class="reference internal" href="#node-pre-gyp">node-pre-gyp</a>
     </li>
@@ -186,17 +190,18 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 class="doctitle" id="use-native-node-modules">Use Native Node Modules</h1>
-<hr />
 <div class="toc">
 <ul>
 <li><a href="#use-native-node-modules">Use Native Node Modules</a><ul>
-<li><a href="#install-with-npm">Install with NPM</a><ul>
+<li><a href="#install-with-npm-v01113-and-later">Install with NPM (v0.111.3 and later)</a></li>
+<li><a href="#install-with-npm-before-v01113">Install with NPM (before v0.111.3)</a><ul>
 <li><a href="#for-lts-releases">For LTS Releases</a></li>
 <li><a href="#for-non-lts-releases">For non-LTS Releases</a></li>
 </ul>
 </li>
 <li><a href="#manually-rebuild">Manually Rebuild</a><ul>
-<li><a href="#nw-gyp">nw-gyp</a></li>
+<li><a href="#node-gyp-v01113">node-gyp (v0.111.3+)</a></li>
+<li><a href="#nw-gyp-before-v01113">nw-gyp (before v0.111.3)</a></li>
 <li><a href="#node-pre-gyp">node-pre-gyp</a></li>
 </ul>
 </li>
@@ -204,12 +209,24 @@
 </li>
 </ul>
 </div>
-<h2 id="install-with-npm">Install with NPM</h2>
-<h3 id="for-lts-releases">For LTS Releases</h3>
+<h2 id="install-with-npm-v01113-and-later">Install with NPM (v0.111.3 and later)</h2>
+<p>NW.js provides standard Node.js-compatible headers tarballs, so native modules can be built with upstream <code>node-gyp</code> directly. No <code>nw-gyp</code> or custom environment variables are required.</p>
+<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>rebuild<span class="w"> </span>--target<span class="o">=</span><span class="m">0</span>.111.3<span class="w"> </span>--disturl<span class="o">=</span>https://dl.nwjs.io/
+</code></pre></div>
+<p>Or during <code>npm install</code>:</p>
+<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>install<span class="w"> </span>--target<span class="o">=</span><span class="m">0</span>.111.3<span class="w"> </span>--disturl<span class="o">=</span>https://dl.nwjs.io/
+</code></pre></div>
+<p><code>node-gyp</code> will automatically download the headers tarball from the NW.js download server.</p>
+<div class="admonition warning">
+<p class="admonition-title">Note for Windows</p>
+<p>You need a compiler toolchain installed (Visual Studio with &ldquo;Desktop development with C++&rdquo; workload).</p>
+</div>
+<h2 id="install-with-npm-before-v01113">Install with NPM (before v0.111.3)</h2>
 <div class="admonition warning">
 <p class="admonition-title">Use Same Version and Architecture of Node.js and NW.js</p>
 <p>Following instructions only works if you are using the same version and architecture of Node.js and NW.js.</p>
 </div>
+<h3 id="for-lts-releases">For LTS Releases</h3>
 <p>If you are using LTS release, native modules installed by <code>npm</code> can be supported after hacking as below:</p>
 <ul>
 <li>On Linux and Mac, no hacking is required.</li>
@@ -221,7 +238,7 @@
 <p class="admonition-title">Use Node.js v14.21.3</p>
 <p>The following steps were tested with Node.js v14.21.3.</p>
 </div>
-<p>If you are using non-LTS release, <code>nw-gyp</code> is required to be pre-installed globally to build modules due to <a href="https://github.com/nwjs/nw.js/issues/5025">ABI differences in V8</a>. These instructions below works for LTS releases as well.</p>
+<p>If you are using non-LTS release, <code>nw-gyp</code> is required to be pre-installed globally to build modules due to ABI differences in V8. These instructions below works for LTS releases as well.</p>
 <p>To install native modules for NW.js, run following commands in your terminal:</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Install nw-gyp globally</span>
 npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>nw-gyp
@@ -241,9 +258,9 @@ npm<span class="w"> </span>install
 <div class="admonition warning">
 <p class="admonition-title">Note for Windows</p>
 <p>You will need to have a compiler installed. You can get one by installing the <a href="http://landinghub.visualstudio.com/visual-cpp-build-tools">Visual C++ Build Tools</a>. You will also need Python 2.7 (version 3.x is not supported).<br />
-The <code>npm_config_node_gyp</code> environment variable has to be set to <code>path\to\global\node_modules\nw-gyp\bin\nw-gyp.js</code> instead of the <code>nw-gyp.cmd</code> batch script. This is a <a href="https://github.com/npm/npm/issues/14543">bug of npm</a>.</p>
+The <code>npm_config_node_gyp</code> environment variable has to be set to <code>path\to\global\node_modules\nw-gyp\bin\nw-gyp.js</code> instead of the <code>nw-gyp.cmd</code> batch script. This is a <a href="https://github.com/npm/npm/issues/14543">bug of npm</a>.<br />
+You must use <code>set</code> instead of <code>export</code> to set environment variables in Windows. Here is a full example (Windows 10, Visual C++ Build Tool v2015):</p>
 </div>
-<p>You must use <code>set</code> instead of <code>export</code> to set environment variables in Windows. Here is a full example (Windows 10, Visual C++ Build Tool v2015): </p>
 <div class="highlight"><pre><span></span><code>set PYTHON=C:\Python27\python.exe
 set npm_config_target=0.21.6
 set npm_config_arch=x64
@@ -255,29 +272,24 @@ npm install --msvs_version=2015
 <h2 id="manually-rebuild">Manually Rebuild</h2>
 <div class="admonition tip">
 <p class="admonition-title">Full NPM Install is Recommended</p>
-<p>After a version switch of NW.js, the recommended approach is to delete <code>node_modules</code> folder and do a full npm install as <a href="#install-with-npm">the instructions above</a>.</p>
+<p>After switching NW.js versions, delete <code>node_modules</code> and do a full <code>npm install</code> as described above.</p>
 </div>
-<p>Once you switch to a new version of NW.js, you can rebuild <strong>each</strong> of the native modules with the tools below <strong>without reinstall all the modules</strong>. Since <code>binding.gyp</code> is required for building native modules, you can easily locate all native modules by finding <code>binding.gyp</code> file.</p>
-<div class="admonition warning">
-<p class="admonition-title">Rebuild ALL Native Modules</p>
-<p>Make sure you <strong>rebuilt all native modules</strong>. Or you will meet various issues, even crashes. Once manually rebuild don&rsquo;t work for you, try to do a full npm install.</p>
-</div>
-<h3 id="nw-gyp">nw-gyp</h3>
-<p><a href="https://github.com/nwjs/nw-gyp"><code>nw-gyp</code></a> is a hack on <code>node-gyp</code> to support NW.js specific headers and libraries.</p>
-<p>The usage is the same with <code>node-gyp</code>, except that you need to specify the version and arch (<code>x64</code> or <code>ia32</code>) of NW.js manually.</p>
+<h3 id="node-gyp-v01113">node-gyp (v0.111.3+)</h3>
+<p>Standard <a href="https://github.com/nodejs/node-gyp"><code>node-gyp</code></a> works directly with NW.js headers:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>myaddon
+node-gyp<span class="w"> </span>rebuild<span class="w"> </span>--target<span class="o">=</span><span class="m">0</span>.111.3<span class="w"> </span>--disturl<span class="o">=</span>https://dl.nwjs.io/
+</code></pre></div>
+<h3 id="nw-gyp-before-v01113">nw-gyp (before v0.111.3)</h3>
+<p><a href="https://github.com/nwjs/nw-gyp"><code>nw-gyp</code></a> is a modified <code>node-gyp</code> to support NW.js specific headers and libraries.</p>
 <div class="highlight"><pre><span></span><code>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>nw-gyp
 <span class="nb">cd</span><span class="w"> </span>myaddon
 nw-gyp<span class="w"> </span>rebuild<span class="w"> </span>--target<span class="o">=</span><span class="m">0</span>.13.0<span class="w"> </span>--arch<span class="o">=</span>x64
 </code></pre></div>
-<p>See <a href="https://github.com/nwjs/nw-gyp">https://github.com/nwjs/nw-gyp</a> for more details.</p>
 <h3 id="node-pre-gyp">node-pre-gyp</h3>
-<p>Some packages uses <a href="https://github.com/mapbox/node-pre-gyp">node-pre-gyp</a>, which supports building for both Node.js and NW.js by using either <code>node-gyp</code> or <code>nw-gyp</code>.</p>
-<p>The usage of <code>node-pre-gyp</code> is as following:</p>
-<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>node-pre-gyp
-<span class="nb">cd</span><span class="w"> </span>myaddon
-node-pre-gyp<span class="w"> </span>build<span class="w"> </span>--runtime<span class="o">=</span>node-webkit<span class="w"> </span>--target<span class="o">=</span><span class="m">0</span>.13.0<span class="w"> </span>--target_arch<span class="o">=</span>x64
+<p>Some packages use <a href="https://github.com/mapbox/node-pre-gyp"><code>node-pre-gyp</code></a>:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>myaddon
+node-pre-gyp<span class="w"> </span>build<span class="w"> </span>--runtime<span class="o">=</span>node-webkit<span class="w"> </span>--target<span class="o">=</span><span class="m">0</span>.111.3<span class="w"> </span>--target_arch<span class="o">=</span>x64
 </code></pre></div>
-<p>See <a href="https://github.com/mapbox/node-pre-gyp">https://github.com/mapbox/node-pre-gyp</a> for more details.</p>
               
             </div>
           </div><footer>
